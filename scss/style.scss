@@ -99,6 +99,8 @@ body.lock{
       text-transform: uppercase;
       color: #22BF95;
       padding: 8px 0;
+      border: 1.5px solid #22BF95;
+      border-radius: 20px;
     }
   } 
   .menu__body{
@@ -108,7 +110,7 @@ body.lock{
     width: 100%;
     background-color: #fff;
     transition: transform .5s ease-out;
-    z-index: 99;
+    z-index: 1;
     transform: translateY(-120vh);
   }
   .menu__body.active{
@@ -165,6 +167,7 @@ body.lock{
   }
   .get__link{
     width: 180px;
+    
   }
   .log__link{
     width: 90px;
@@ -283,7 +286,7 @@ body.lock{
   &-list{
     position: relative;
     top: 50px;
-    z-index: 9;
+    z-index: 2;
   }
   &-item-wrap{
     display: flex;
@@ -667,9 +670,13 @@ svg:hover .social-hover{
   .header{
     & .menu__list{
       flex-direction: row;
+      align-items: center;
     }
     & .header__button-link{
       margin: 0;
+      & a{
+        border: 1px solid #fff
+      }
     }
     & .menu__list > li{
       padding: 10px 0;
@@ -762,6 +769,7 @@ svg:hover .social-hover{
       width: 90px;
     }
   }
+  
   .header__banner{
     &-title{
       width: 100%;
@@ -940,7 +948,6 @@ svg:hover .social-hover{
       padding-top: 199px;
     }
   }
-  
   .footer{
     padding-top: 77px;
     &__container{

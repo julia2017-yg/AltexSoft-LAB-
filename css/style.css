@@ -145,6 +145,8 @@ body.lock {
   text-transform: uppercase;
   color: #22BF95;
   padding: 8px 0;
+  border: 1.5px solid #22BF95;
+  border-radius: 20px;
 }
 .header .menu__body {
   position: absolute;
@@ -156,7 +158,7 @@ body.lock {
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
-  z-index: 99;
+  z-index: 1;
   -webkit-transform: translateY(-120vh);
           transform: translateY(-120vh);
 }
@@ -361,7 +363,7 @@ body.lock {
 .tips-list {
   position: relative;
   top: 50px;
-  z-index: 9;
+  z-index: 2;
 }
 .tips-item-wrap {
   display: -webkit-box;
@@ -796,9 +798,15 @@ svg:hover .social-hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header .header__button-link {
     margin: 0;
+  }
+  .header .header__button-link a {
+    border: 1px solid #fff;
   }
   .header .menu__list > li {
     padding: 10px 0;
