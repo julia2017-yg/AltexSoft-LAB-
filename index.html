@@ -6,10 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scout</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <div id="banner-submenu" class="header__banner-submenu">
+    <nav class="submenu">
+      <ul class="submenu__list list-top">
+        <li class="first-item tips-active"><a href="#tips">Tips</a></li>
+        <li class="submenu__item-middle"><a class="submenu__link" href="#glossary">Glossary</a></li>
+        <li class="last-item"><a href="#fqas">FAQs</a></li>
+      </ul>
+    </nav>
+  </div>
   <header class="header">
  
       <div class="header__inner">
@@ -42,7 +52,7 @@
       <div class="header__banner">
 
         <h1 class="header__banner-title">Tips & Tools</h1>
-        <div class="header__banner-submenu">
+        <div class="header__banner-submenu banner-top">
           <nav class="submenu">
             <ul class="submenu__list">
               <li class="first-item tips-active"><a href="#tips">Tips</a></li>
@@ -79,24 +89,27 @@
               <li class="tips-sub__item img-item">
                 <img src="images/tips-img.png" alt="tips-icon">
               </li>
-              <li class="tips-sub__item">
-                <p class="tips-sub__item-text">
-                  There’s nothing hackers love more than a dismissed update reminder.
-                  We keep our team’s computers in shape and up to date so that they aren’t subject to attacks that could
-                  otherwise be avoided.
-                </p>
-                <p class="tips-sub__item-text">
-                  Not properly updating your systems makes you an easy to reach target and hackers will often go after
-                  the lowest hanging fruit.
-                  When it comes to maintaining a strong cybersecurity network the best thing a user can do is to prevent
-                  problems before they occur,
-                  and the easiest way to do that is by making sure that all systems are updated and updated regularly.
-                </p>
-              </li>
-              <li class="tips-sub__item info-item">
-                <img src="images/tips-info-icon.png" alt="info">
-                <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
-              </li>
+              <div class="tips-sub__item-wrapper">
+                <li class="tips-sub__item">
+                  <p class="tips-sub__item-text">
+                    There’s nothing hackers love more than a dismissed update reminder.
+                    We keep our team’s computers in shape and up to date so that they aren’t subject to attacks that could
+                    otherwise be avoided.
+                  </p>
+                  <p class="tips-sub__item-text">
+                    Not properly updating your systems makes you an easy to reach target and hackers will often go after
+                    the lowest hanging fruit.
+                    When it comes to maintaining a strong cybersecurity network the best thing a user can do is to prevent
+                    problems before they occur,
+                    and the easiest way to do that is by making sure that all systems are updated and updated regularly.
+                  </p>
+                </li>
+                <li class="tips-sub__item info-item">
+                  <img src="images/tips-info-icon.png" alt="info">
+                  <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
+                </li>
+              </div>
+             
             </ul>
           </li>
           <li class="border-item">
@@ -213,12 +226,12 @@
         <div class="slider__tabs-item">
          
           <div class="slider__wrap-item">
-            <ul class="mobile__list">
-              <li class="slider__item-active">IP Address</li>
-              <li>Malware</li>
-              <li>Penetration Test</li>
-              <li>Phishing/Spearphishing</li>
-              <li>Ransomware</li> 
+            <ul class="mobile__list actions">
+              <li class="slider__item-active"><a href="#tab1">IP Address</a></li>
+              <li><a href="#tab2">Malware</a></li>
+              <li><a href="#tab3">Penetration Test</a></li>
+              <li><a href="#tab4">Phishing/Spearphishing</a></li>
+              <li><a class="slider__item-active" href="#tab5">Ransomware</a></li>
             </ul>
             
             <ul class="dekstop__list">
@@ -269,10 +282,28 @@
         </div>
       </div>
       <div class="slider__text">
-        <div class="slider__text-inner">
+        <div class="slider__text-inner"  id="tab1">
+          <div class="slider__text-title">IP Address</div>
+          <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.</div>
+        </div>
+        <div class="slider__text-inner"  id="tab2">
+          <div class="slider__text-title">Malware</div>
+          <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.</div>
+        </div>
+        <div class="slider__text-inner"  id="tab3">
+          <div class="slider__text-title">Penetration Test</div>
+          <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.</div>
+        </div>
+        <div class="slider__text-inner tabs__item"  id="tab4">
+          <div class="slider__text-title">Phishing/Spearphishing</div>
+          <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.</div>
+        </div>
+
+        <div class="slider__text-inner tabs__item"  id="tab5">
           <div class="slider__text-title">Ransomware</div>
           <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.</div>
         </div>
+
 
       </div>
 
@@ -488,6 +519,8 @@
     </div>
   </footer> 
   <!----------footer-end----------->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

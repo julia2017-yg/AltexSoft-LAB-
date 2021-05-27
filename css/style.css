@@ -63,6 +63,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 body.lock {
@@ -82,6 +83,7 @@ body.lock {
 
 .header {
   position: relative;
+  z-index: 2;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -252,7 +254,17 @@ body.lock {
 }
 .header__banner-submenu {
   padding: 0 20px;
-  height: 875px;
+  position: absolute;
+  width: 100%;
+}
+
+#banner-submenu {
+  position: absolute;
+}
+#banner-submenu.sticky {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
 .first-item {
@@ -269,10 +281,6 @@ body.lock {
   padding-top: 6px;
 }
 
-.submenu {
-  position: sticky;
-  top: 0;
-}
 .submenu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +371,6 @@ body.lock {
 .tips-list {
   position: relative;
   top: 50px;
-  z-index: 2;
 }
 .tips-item-wrap {
   display: -webkit-box;
@@ -776,8 +783,8 @@ svg:hover .social-hover {
     height: 300px;
   }
   .header__banner-submenu {
-    margin-top: 88px;
     padding: 0 108px;
+    top: 256px;
   }
   .header__banner .submenu__list {
     height: 60px;
@@ -788,8 +795,8 @@ svg:hover .social-hover {
     padding: 0 40px;
   }
 
-  .header__banner {
-    height: 500px;
+  .header__inner {
+    min-height: 54px;
   }
 }
 @media (min-width: 939px) {
@@ -876,8 +883,11 @@ svg:hover .social-hover {
   .header {
     height: 500px;
   }
+  .header__banner-submenu {
+    bottom: -36px;
+  }
   .header__inner {
-    padding: 1px 92px 0;
+    padding: 28px 92px 0;
   }
   .header .menu__list li {
     margin-right: 50px;
@@ -915,11 +925,6 @@ svg:hover .social-hover {
     font-size: 110px;
     line-height: 130px;
     margin-top: 75px;
-  }
-  .header__banner-submenu {
-    margin-top: 135px;
-    padding: 0 335px;
-    height: 2000px;
   }
   .header__banner .submenu__list {
     height: 80px;
@@ -963,6 +968,23 @@ svg:hover .social-hover {
   }
   .tips__link::after {
     right: 56px;
+  }
+
+  .tips-sub {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .tips-sub__item-text {
+    width: 464px;
+  }
+
+  .info-item {
+    width: 400px;
   }
 
   .border-radius {

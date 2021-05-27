@@ -40,6 +40,7 @@ body{
   font-weight: 400;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 body.lock{
   overflow: hidden;
@@ -55,6 +56,7 @@ body.lock{
 }
 .header {
   position: relative;
+  z-index: 2;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -194,7 +196,18 @@ body.lock{
   }
   &-submenu{
     padding: 0 20px;
-    height: 875px;
+    position: absolute;
+    width: 100%;
+    // bottom: -20px;
+  } 
+}
+#banner-submenu {
+  position: absolute;
+
+  &.sticky {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
   }
 }
 .first-item{
@@ -209,8 +222,8 @@ body.lock{
     padding-top: 6px;
 }
 .submenu{
-  position: sticky;
-  top: 0;
+  // position: sticky;
+  // top: 0;
   &__list{
     display: flex;
     align-items: center;
@@ -286,7 +299,6 @@ body.lock{
   &-list{
     position: relative;
     top: 50px;
-    z-index: 2;
   }
   &-item-wrap{
     display: flex;
@@ -649,8 +661,9 @@ svg:hover .social-hover{
   .header__banner{
     height: 300px;
     &-submenu{
-      margin-top: 88px;
+      // margin-top: 88px;
       padding: 0 108px;
+      top: 256px;
     }
     & .submenu__list{
       height: 60px;
@@ -661,9 +674,12 @@ svg:hover .social-hover{
   .container{
     padding: 0 40px;
   } 
-  .header__banner{
-    height: 500px;
+  .header__inner {
+    min-height: 54px;
   }
+  // .header__banner{
+  //   height: 500px;
+  // }
   
 }
 @media (min-width: 939px){
@@ -737,8 +753,11 @@ svg:hover .social-hover{
   } 
   .header{
     height: 500px;
+    &__banner-submenu{
+      bottom: -36px;
+    }
     &__inner{
-      padding: 1px 92px 0;
+      padding: 28px 92px 0;
     } 
     & .menu__list li {
       margin-right: 50px;
@@ -779,9 +798,9 @@ svg:hover .social-hover{
       margin-top: 75px;
     }
     &-submenu{
-      margin-top: 135px;
-      padding: 0 335px;
-      height: 2000px;
+      // margin-top: 135px;
+      // padding: 0 335px;
+      // height: 2000px;
     }
     & .submenu__list{
       height: 80px;
@@ -829,6 +848,16 @@ svg:hover .social-hover{
       }
     }
     
+  }
+  .tips-sub{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .tips-sub__item-text{
+    width: 464px;
+  }
+  .info-item{
+    width: 400px;
   }
   .border-radius {
     width: 37px;
@@ -1016,4 +1045,5 @@ svg:hover .social-hover{
     font-size: 16px;
     line-height: 24px;
   }
+  
 }
