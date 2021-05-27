@@ -37,9 +37,7 @@ window.addEventListener("scroll", function() {
   var faqH = this.document.getElementById("fqas").clientHeight;
   var tipsH = this.document.getElementById("tips").clientHeight;
   var glossaryH = this.document.getElementById("glossary").clientHeight;
-  var stickyMenu = document.getElementById("banner-submenu");
-
-  console.log(faqH);
+  var stickyMenu = document.getElementById("banner-submenu")
 
   if (window.scrollY > headerH && window.scrollY < faqH + tipsH + glossaryH) {
     stickyMenu.classList.add('sticky');
@@ -49,55 +47,7 @@ window.addEventListener("scroll", function() {
   }
 });
 
-
-
-
 window.addEventListener("scroll", function() {
   var header = document.querySelector("header");
   header.classList.toggle("sticky-header", window.scrollY > 0);
-});
-// fqasLink.forEach((btn, index) => {
-// btn.addEventListener('click', () => {
-// fqaSub.forEach((subElem) => {
-//        subElem.classList.add('hidden');      });
-    
-//    fqasLink.forEach((fqaElem) => {
-//     fqaElem.classList.remove('fqas__link_active');
-//   });
-//   fqaSub[index].classList.remove('hidden');
-//   btn.classList.add('fqas__link_active');
-//   });
-//  });
-$('.responsive').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    
-  ]
 });
