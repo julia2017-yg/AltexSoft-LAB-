@@ -291,7 +291,7 @@ body.lock {
 }
 
 #header ul {
-  top: -53px;
+  top: -92px;
 }
 
 .link-hover-center a {
@@ -1089,6 +1089,14 @@ svg:hover .social-hover {
     font-size: 90px;
     line-height: 120px;
   }
+  .slider__wrapper .slider__inner .slider-nav .slick-slide.is-active h3:before {
+    left: 0;
+    height: 1px;
+    width: 105px;
+  }
+  .slider__wrapper .slider__inner .slider-nav h3 span {
+    margin-left: 29px;
+  }
   .slider__wrapper .slider__inner .slider-single .slider__title-wrapper .slider__text-text {
     margin-top: 73px;
     font-size: 24px;
@@ -1096,6 +1104,7 @@ svg:hover .social-hover {
     max-width: 472px;
   }
   .slider__wrapper .slider__inner .slider-single .slider__title-wrapper .slider__text-text::before{
+    height: 72px;
     left: 100px;
     top: 205px;
   }
