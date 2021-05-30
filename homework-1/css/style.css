@@ -919,9 +919,9 @@ svg:hover .social-hover {
     display: flex;
     align-items: center;
   }
-
   .header__banner-submenu {
-    bottom: -36px;
+    padding: 0 20px;
+    top: 460px;
   }
   .header .menu__list li {
     margin-right: 29px;
