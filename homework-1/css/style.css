@@ -536,6 +536,9 @@ body.lock {
   font-size: 16px;
   line-height: 24px;
   color: #191919;
+  max-width: 318px;
+  width: 100%;
+  margin-left: 10px;
 }
 .slider__wrapper .slider__inner .slider__text-text::before{
   content: "";
@@ -543,8 +546,9 @@ body.lock {
   background-color: #37e63e;
   width: 1.5px;
   height: 48px;
-  left: 100px;
-  top: 205px;
+  left: 0px;
+  top: 61px;
+  
 }
 .slider__wrapper .slider__inner .slick-arrow {
   position: absolute;
@@ -1089,8 +1093,12 @@ svg:hover .social-hover {
     margin-top: 73px;
     font-size: 24px;
     line-height: 36px;
+    max-width: 472px;
   }
-
+  .slider__wrapper .slider__inner .slider-single .slider__title-wrapper .slider__text-text::before{
+    left: 100px;
+    top: 205px;
+  }
   .fqas {
     padding: 160px 0 100px;
   }
@@ -1145,7 +1153,6 @@ svg:hover .social-hover {
     font-size: 24px;
     line-height: 36px;
   }
-
   .social__inner {
     display: flex;
     justify-content: space-between;
@@ -1190,4 +1197,4 @@ svg:hover .social-hover {
     font-size: 16px;
     line-height: 24px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
