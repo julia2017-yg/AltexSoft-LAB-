@@ -537,6 +537,15 @@ body.lock {
   line-height: 24px;
   color: #191919;
 }
+.slider__wrapper .slider__inner .slider__text-text::before{
+  content: "";
+  position: absolute;
+  background-color: #37e63e;
+  width: 1.5px;
+  height: 48px;
+  left: 100px;
+  top: 205px;
+}
 .slider__wrapper .slider__inner .slick-arrow {
   position: absolute;
   right: 0;
@@ -726,8 +735,8 @@ svg:hover .social-hover {
   }
 
   .header__banner-submenu {
-    padding: 205px 335px 0;
-    top: 256px;
+    padding: 0 20px;
+    top: 188px;
   }
   .header__banner .submenu__list {
     height: 60px;
@@ -827,7 +836,9 @@ svg:hover .social-hover {
 .list-top {
   height: 80px;
 }
-
+@media (min-width: 639px) {
+  
+}
 @media (min-width: 939px) {
   .header .menu__list {
     flex-direction: row;
