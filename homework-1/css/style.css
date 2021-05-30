@@ -1099,6 +1099,9 @@ svg:hover .social-hover {
     left: 100px;
     top: 205px;
   }
+  .slider__wrapper .slider__inner .prev, .slider__wrapper .slider__inner .next{
+    width: 25px;
+  }
   .fqas {
     padding: 160px 0 100px;
   }
