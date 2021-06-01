@@ -9,15 +9,33 @@ const iconMenu = document.querySelector('.menu__icon');
     });
   }
 
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+      document.querySelectorAll('.section').forEach((el, i) => {
+        if (el.offsetTop - document.querySelector('#banner-submenu').clientHeight <= scrollDistance) {
+          document.querySelectorAll('.submenu a').forEach((el) => {
+            if (el.classList.contains('tips-active')) {
+              el.classList.remove('tips-active');
+            }
+          });
+  
+          document.querySelectorAll('.submenu li')[i].querySelector('a').classList.add('tips-active');
+        }
+      });
+  });
 ///////////accordeon///////////////
 
 const tipLink = document.querySelectorAll('.tips__link');
 const tipSub = document.querySelectorAll('.block-text');
+const tipsItemWrap = document.querySelectorAll('.tips-item-wrap');
 
 for (let i = 0; i < tipLink.length; i++) {
   tipLink[i].addEventListener("click", () => {
     tipSub[i].classList.toggle('hidden');
+    tipsItemWrap[i].classList.toggle('hidden');
+    console.log(tipsItemWrap[i]);
     tipLink[i].classList.toggle('tips__link_active');
+    
   })
 }
 
@@ -73,10 +91,10 @@ $(document).ready(function(){
       $('.slider-nav .slick-slide.slick-current').addClass('is-active');
     })
     .slick({
-      nextArrow: '<img src="./images/next-arrow.svg" class="next" alt="next">',
-      prevArrow: '<img src="./images/prev-arrow.svg" class="prev" alt="prev">',
+      nextArrow: '<img src="./images/arrow-next.svg" class="next" alt="next">',
+      prevArrow: '<img src="./images/arrow-prev.svg" class="prev" alt="prev">',
       slidesToShow: 16,
-      slidesToScroll: 1,
+      slidesToScroll: 16,
       dots: false,
       vertical: true,
       focusOnSelect: false,
@@ -85,7 +103,7 @@ $(document).ready(function(){
         breakpoint: 1024,
         settings: {
           slidesToShow: 16,
-          slidesToScroll: 1,
+          slidesToScroll: 16,
         }
       }, {
         breakpoint: 640,
@@ -97,7 +115,7 @@ $(document).ready(function(){
         breakpoint: 420,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 1,
+          slidesToScroll: 5,
      }
       }]
     });
