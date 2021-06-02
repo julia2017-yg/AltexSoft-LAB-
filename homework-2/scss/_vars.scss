@@ -12,6 +12,11 @@ $lineCardColor: #22BF95;
   line-height: 36px;
   color: #191919;
 }
+%title-section-text-mobile{
+  font-size: 13px;
+  line-height: 24px;
+  color: #191919;
+}
 %title-section-text{
   font-size: 16px;
   line-height: 24px;
@@ -23,9 +28,21 @@ $lineCardColor: #22BF95;
   box-sizing: border-box;
   box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
   border-radius: 20px;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+  color: #22BF95;
 }
 %button-dark{
   background: #22BF95;
   box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
   border-radius: 20px;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }

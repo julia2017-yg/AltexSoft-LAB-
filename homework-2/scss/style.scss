@@ -1,7 +1,6 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
-@import 'libs';
 @import 'global';
 
 body.lock {
@@ -277,15 +276,107 @@ body.lock {
     }
   } 
 }
-
+.about{
+  padding: 60px 0 80px;
+  &-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-item img{
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  &-title{
+    @extend %title-section-secondary;
+  }
+  &-text{
+    @extend %title-section-text-mobile;
+    max-width: 309px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  &-btn{
+    display: flex;
+    flex-direction: column;
+    max-width: 209px;
+    width: 100%;
+    margin: 0 auto;   
+    & .btn-more{
+      @extend %button-light;
+      margin-top: 30px;
+      padding: 8px 0;
+    }
+    & .btn-product{
+      @extend %button-dark;
+      margin-top: 30px;
+      padding: 8px 0;
+    }
+  }
+}
+.essensials{
+  padding-bottom: 88px;
+  &-title{
+    @extend %title-section-secondary;
+    max-width: 300px;
+  }
+}
+.card{
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px #E5E5E5;
+  border-radius: 5px;
+  margin-top: 10px; 
+  padding: 30px 15px 10px 42px;
+  border-left: 5px solid #22BF95;
+  &-inner{
+    display: flex;
+    align-items: center;
+  }
+  &-info{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-icon{
+    width: 58px;
+    margin-left: 15px;
+  }
+  & .info-icon{
+    width: 19px;
+    height: 19px;
+  }
+  &-title{
+    @extend %title-section-text;
+  }
+  &-text{
+    max-width: 182px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 22px;
+  }
+}
+.card-btn{
+  display: flex;
+  flex-direction: column;
+  max-width: 209px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn-product{
+  margin-top: 80px;
+  @extend %button-dark;
+  padding: 8px 0;
+}
 @media (min-width: 767px){
   .header-container {
     max-width: 689px;
   }
+  .container{
+    max-width: 767px;
+  }
   .hero{   
-    &-item{
-      max-width: 500px;
-    }
     &-title{
       padding: 120px 0 0;
       max-width: 510px;
@@ -295,11 +386,52 @@ body.lock {
       &::before{
         height: 90px;
       }
+    }  
+  }
+  .about{
+    &-items{
+      flex-direction: row;
+      align-items: end;
     }
-   
+    &-item img{
+      max-width: 350px;
+    }
+    &-item-right{
+      order: 2;
+      margin-top: 90px;
+      margin-left: 61px;
+    }
+    &-item-left{
+      order: 1;
+    }
+  }
+  .essensials{
+    &-title{
+      max-width: 785px;
+    }
+    &-cards{
+      margin-top: 46px;
+    }
+  }
+  .essensials-card{
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    margin-top: 30px;
+    &-second{
+      margin-left: 30px;
+    }
+    &-btn{
+      max-width: 230px;
+    }
   }
 }
 @media (min-width: 1440px){
+  .container{
+    max-width: 1440px;
+    padding: 0 135px;
+  }
   .header{
     padding: 20px 84px;
     &.sticky-header ul li .menu-link{
@@ -400,12 +532,12 @@ body.lock {
       font-size: 110px;
       line-height: 130px;
       letter-spacing: 2px;
-      padding: 180px 0 0;
+      padding: 160px 0 0;
       max-width: 1110px;
       padding-bottom: 0;
     }
     &-text{
-      max-width: 488px;
+      max-width: 670px;
       font-size: 20px;
       line-height: 26px;
       margin-top: 0;
@@ -421,4 +553,77 @@ body.lock {
       }
     } 
   } 
+  .about{
+    position: relative;
+    padding: 40px 0 80px;
+    &-item-right{
+      margin-left: 96px;
+    }
+    &-item img {
+      max-width: 600px;
+    }
+    &-title{
+      font-size: 42px;
+      line-height: 54px;
+    }
+    &-text{
+      font-size: 16px;
+      max-width: 470px;
+    }
+    &-item-right {
+      margin-top: 148px;
+    }   
+  }
+  .about-btn{
+    flex-direction: row;
+    max-width: 480px;
+    position: absolute;
+    left: 58%;
+    bottom: 239px;
+    & .btn-more{
+      width: 200px;
+      margin-right: 70px;
+    }
+    & .btn-product{
+      width: 200px;
+    }
+  }
+  .essensials{
+    padding-top: 21px;
+    &-title {
+      max-width: 785px;
+      font-size: 42px;
+      line-height: 54px;
+    }
+  }
+  .card {
+    margin-top: 35px;
+    max-width: 500px;
+    width: 100%;
+    padding: 28px 15px 10px 42px;
+    &-title{
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &-text{
+      font-size: 13px;
+      line-height: 24px;
+      max-width: 277px;
+    }
+    &-icon{
+      width: 90px;
+      margin-left: 45px;
+    }
+    & .info-icon{
+      width: 22px;
+    }  
+  }
+  .btn-product {
+    margin-top: 73px;
+  } 
+  .card-secondary{
+    & .card-info{
+      padding-top: 24px;
+    }
+  }
 }
