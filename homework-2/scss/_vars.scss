@@ -1,0 +1,31 @@
+$title: #191919;
+$lineCardColor: #22BF95;
+
+
+%title-section-main{
+  font-size: 42px;
+  line-height: 54px;
+  color: #191919;
+}
+%title-section-secondary{
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+%title-section-text{
+  font-size: 16px;
+  line-height: 24px;
+  color: #191919;
+}
+%button-light{
+  background: #FFFFFF;
+  border: 1.5px solid #22BF95;
+  box-sizing: border-box;
+  box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+  border-radius: 20px;
+}
+%button-dark{
+  background: #22BF95;
+  box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+  border-radius: 20px;
+}
