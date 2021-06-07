@@ -11,584 +11,592 @@
 </head>
 
 <body>
-  <div id="banner-submenu" class="fixed-top">
-    <nav class="submenu">
-      <ul class="submenu__list list-top" id="list-top">
-        <li class="first-item"><a class="tips-active" href="#tips">Tips</a></li>
-        <li class="submenu__item-middle"><a class="submenu__link" href="#glossary">Glossary</a></li>
-        <li class="last-item"><a href="#fqas">FAQs</a></li>
-      </ul>
-    </nav>
-  </div>
-  <header class="header" id="header">
-    <div class="logo">
-      <a class="logo__link" href="#">
-        skout
-      </a>
-    </div>
-    <div class="header__menu menu">
-      <div class="menu__icon">
-        <span></span>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a class="logo-link" href="#">
+          skout
+        </a>
       </div>
-      <nav class="menu__body">
-        <ul class="menu__list">
-          <li class="link-hover-center"><a class="menu__link first-link" href="#">Why Skout </a></li>
-          <li class="link-hover-center"><a class="menu__link" href="#">Products</a></li>
-          <li class="link-hover-center"><a class="menu__link" href="#">Partners</a></li>
-          <li class="link-hover-center"><a class="menu__link" href="#">Company</a></li>
-          <li class="link-hover-center active"><a class="menu__link" href="#">Tips & Tools</a></li>
-          <li class="link-hover-center"><a class="menu__link" href="#">Blog</a></li>
-          <div class="header__button-link">
-            <button type="button"></button>
-            <a class="get__link" href="#">Get Skout</a>
-            <a class="log__link" href="#">Log In</a>
+      <div class="header-menu menu">
+        <div class="hamburger-menu">
+          <span></span>
+        </div>
+        <nav class="menu-body">
+          <ul class="header-menu-list">
+            <li class="menu-item"><a class="menu-link first-link" href="#">Why Skout </a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Products</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Partners</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Company</a></li>
+            <li class="menu-item active"><a class="menu-link" href="#">Tips & Tools</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
+          </ul>
+          <div class="header-button">
+            <button class="get-button button">Get Skout</button>
+            <button class="log-button button">Log In</button>
           </div>
-        </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
-  <div class="header__banner" id="banner">
-
-    <h1 class="header__banner-title">Tips & Tools</h1>
-    <div class="header__banner-submenu banner-top">
+  <div class="header-banner">
+    <h1 class="header-banner-title">Tips & Tools</h1>
+  </div>
+  <main>
+    <div class="header-banner-submenu">
       <nav class="submenu">
-        <ul class="submenu__list">
-          <li class="first-item"><a class="tips-active link-active" href="#tips">Tips</a></li>
-          <li class="submenu__item-middle"><a class="submenu__link" href="#glossary">Glossary</a></li>
-          <li class="last-item"><a href="#fqas">FAQs</a></li>
+        <ul class="submenu-list">
+          <li class="submenu-item first-item"><a class="tips-active" href="#tips">Tips</a></li>
+          <li class="submenu-item-middle"><a class="submenu-link" href="#glossary">Glossary</a></li>
+          <li class="submenu-item last-item"><a href="#fqas">FAQs</a></li>
         </ul>
       </nav>
     </div>
-  </div>
-  <!----------tips-start----------->
-  <section class="tips section" id="tips">
-    <div class="container">
-
-      <div class="tips__wrrapper">
-        <div class="tips__img border-img">
-          <img class="mobile_img" src="images/logo-tips_mobile.png" alt="tips">
-          <img class="dekstop_img" src="images/logo-tips.png" alt="tips">
+    <!----------tips-start----------->
+    <section class="tips section" id="tips">
+      <div class="container">
+        <div class="tips-wrrapper">
+          <div class="tips-img border-top">
+            <img class="logo-image" src="images/tips-image.svg" alt="tips">
+          </div>
+          <div class="tips-list">
+            <div class="border-item">
+              <button type="button" class="tips-link tips-link-first">
+                <span class="border-radius"></span>
+                <div class="tips-item-wrap">
+                  <span class="tips-item-title">System Patching</span>
+                </div>
+              </button>
+              <div class="tips-sub hidden">
+                <div class="tips-sub-item-wrapper">
+                  <h3 class="item-title">System Patching</h3>
+                  <div class="tips-sub-item img-item">
+                    <img class="tips-image" src="images/tips-img-1.svg" alt="tips-icon">
+                  </div>
+                </div>
+                <div class="tips-sub-item-wrapper">
+                  <div class="tips-sub-item">
+                    <p class="tips-sub-item-text tips-sub-item-text-top">
+                      There’s nothing hackers love more than a dismissed update reminder.
+                      We keep our team’s computers in shape and up to date so that they aren’t subject to attacks that
+                      could
+                      otherwise be avoided.
+                    </p>
+                    <p class="tips-sub-item-text">
+                      Not properly updating your systems makes you an easy to reach target and hackers will often go
+                      after
+                      the lowest hanging fruit.
+                      When it comes to maintaining a strong cybersecurity network the best thing a user can do is to
+                      prevent
+                      problems before they occur,
+                      and the easiest way to do that is by making sure that all systems are updated and updated
+                      regularly.
+                    </p>
+                  </div>
+                  <div class="tips-sub-item info-item">
+                    <img src="images/tips-info-icon.png" alt="info">
+                    <span class="tips-sub-text-info">Based on the 2018 Verizon Data Breach Report</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-item">
+              <button type="button" class="tips-link">
+                <span class="border-radius"></span>
+                <div class="tips-item-wrap">
+                  <span class="tips-item-title">End-to-End Protection</span>
+                </div>
+              </button>
+              <div class="tips-sub hidden">
+                <div class="tips-sub-item-wrapper">
+                  <h3 class="item-title">End-to-End Protection</h3>
+                  <div class="tips-sub-item img-item">
+                    <img class="tips-image" src="images/tips-img-2.svg" alt="tips-icon">
+                  </div>
+                </div>
+                <div class="tips-sub-item-wrapper">
+                  <div class="tips-sub-item">
+                    <p class="tips-sub-item-text tips-sub-item-text-top">
+                      51% of breaches involved malware, we cover your bases. Malware is classified as software that is
+                      designed with the intention of causing damage to your devices,
+                      whether those be phones, servers, laptops, or any other kind of device in the IoT.
+                    </p>
+                    <p class="tips-sub-item-text">
+                      Malware often takes the form of code, innocuous content, scripts or software.
+                      With SKOUT’s End-to-End Protection you can rest assured that all vulnerable points within your
+                      system are accounted for and safeguarded so
+                      that you don’t fall victim to malware of any kind.
+                    </p>
+                  </div>
+                  <div class="tips-sub-item info-item">
+                    <img src="images/tips-info-icon.png" alt="info">
+                    <span class="tips-sub-text-info">Based on the 2018 Verizon Data Breach Report</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-item">
+              <button type="button" class="tips-link">
+                <span class="border-radius"></span>
+                <div class="tips-item-wrap">
+                  <span class="tips-item-title">Empowering Teams</span>
+                </div>
+              </button>
+              <div class="tips-sub hidden">
+                <div class="tips-sub-item-wrapper">
+                  <h3 class="item-title">Empowering Teams</h3>
+                  <div class="tips-sub-item img-item">
+                    <img class="tips-image" src="images/tips-img-3.svg" alt="tips-icon">
+                  </div>
+                </div>
+                <div class="tips-sub-item-wrapper">
+                  <div class="tips-sub-item">
+                    <p class="tips-sub-item-text tips-sub-item-text-top">
+                      With 43% of breaches involving social attacks, cyber security is a team sport. We get your
+                      employees
+                      up to speed.
+                    </p>
+                    <p class="tips-sub-item-text">
+                      Our maturity model makes sure that every team is able to set security benchmarks and reach those
+                      benchmarks as certain cybersecurity requirements are met.
+                      Requirements could range from individuals setting up approved firewalls to everyone within a team
+                      taking on a complex password system.
+                      Small changes often make all the difference when trying to avoid a cybersecurity crisis and will
+                      allow you to find trouble before trouble finds you.
+                    </p>
+                  </div>
+                  <div class="tips-sub-item info-item">
+                    <img src="images/tips-info-icon.png" alt="info">
+                    <span class="tips-sub-text-info">Based on the 2018 Verizon Data Breach Report</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-item border-item-last">
+              <button type="button" class="tips-link">
+                <span class="border-radius"></span>
+                <div class="tips-item-wrap">
+                  <span class="tips-item-title">Secure Credentials</span>
+                </div>
+              </button>
+              <div class="tips-sub hidden">
+                <div class="tips-sub-item-wrapper">
+                  <div class="item-title">Secure Credentials</div>
+                  <div class="tips-sub-item img-item">
+                    <img class="tips-image" src="images/tips-img-4.svg" alt="tips-icon">
+                  </div>
+                </div>
+                <div class="tips-sub-item-wrapper">
+                  <div class="tips-sub-item">
+                    <p class="tips-sub-item-text tips-sub-item-text-top">
+                      81% of attacks involve stolen or weak credentials.
+                      The easiest way to protect yourself from having your credentials stolen is to make sure that they
+                      are not easy to replicate.
+                      This means including multiple characters and figures in your passwords, and not reusing the same
+                      passwords for multiple accounts.
+                      Also, it’s key to never store your passwords in one central location. Committing passwords to
+                      memory
+                      is often the best way to make sure that intruders don’t figure them out.
+                      All of these tips represent easy steps that you can take towards making your credentials stronger.
+                    </p>
+                  </div>
+                  <div class="tips-sub-item info-item">
+                    <img src="images/tips-info-icon.png" alt="info">
+                    <span class="tips-sub-text-info">Based on the 2018 Verizon Data Breach Report</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul class="tips-list">
-          <li class="border-item">
-            <button type="button" class="tips__link tips__link-first">
-              <span class="border-radius"></span>
+      </div>
+    </section>
+    <!----------tips-end----------->
+    <!----------glossary-start----------->
+    <section class="glossary section" id="glossary">
+      <div class="container">
+        <div class="glossary-img border-top">
+          <img class="logo-image" src="images/glossary-logo.svg" alt="glossary">
+        </div>
+      </div>
+      <div id="page" class="slider-wrapper">
+        <div class="row">
+          <div class="slider-inner">
+            <div class="slider slider-nav">
+              <div>
+                <h3><span>Botnet</span></h3>
+              </div>
+              <div>
+                <h3><span>Breach</span></h3>
+              </div>
+              <div>
+                <h3><span>Cloud</span></h3>
+              </div>
+              <div>
+                <h3><span>DDoS</span></h3>
+              </div>
+              <div>
+                <h3><span>Domain</span></h3>
+              </div>
+              <div>
+                <h3><span>Endpoint</span></h3>
+              </div>
+              <div>
+                <h3><span>Exploit</span></h3>
+              </div>
+              <div>
+                <h3><span>Firewall</span></h3>
+              </div>
+              <div>
+                <h3><span>IP Address</span></h3>
+              </div>
+              <div>
+                <h3><span>Malware</span></h3>
+              </div>
+              <div>
+                <h3><span>Penetration Test</span></h3>
+              </div>
+              <div>
+                <h3><span>Phishing/Spearphishing</span></h3>
+              </div>
+              <div>
+                <h3><span>ng</span></h3>
+              </div>
+              <div>
+                <h3><span>Ransomware</span></h3>
+              </div>
+              <div>
+                <h3><span>Session Hijacking</span></h3>
+              </div>
+              <div>
+                <h3><span>Social Engineering</span></h3>
+              </div>
+              <div>
+                <h3><span>Software</span></h3>
+              </div>
+              <div>
+                <h3><span>SOC</span></h3>
+              </div>
+              <div>
+                <h3><span>Trojan Horse</span></h3>
+              </div>
+              <div>
+                <h3><span>VPN</span></h3>
+              </div>
+              <div>
+                <h3><span>Virus</span></h3>
+              </div>
+              <div>
+                <h3><span>Worm</span></h3>
+              </div>
+            </div>
+            <div class="slider slider-single">
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Botnet</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Breach</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Cloud</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">DDoS</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Domain</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Endpoint</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Exploit</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Firewall</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">IP Address</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Malware</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Penetration Test</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Phishing/ Spearphishing</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">ng</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Ransomware</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Session Hijacking</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Social Engineering</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Software</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">SOC</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Trojan Horse</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">VPN</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Virus</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <h3 class="slider-title-wrapper">
+                  <div class="slider-text-title">Worm</div>
+                  <div class="slider-text-text">Malicious software that blocks access to a system until a ransom is
+                    paid.
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!----------glossary-end----------->
+    <!----------FQAs-start----------->
+    <section class="fqas section" id="fqas">
+      <div class="container">
+        <div class="fqas-img border-top">
+          <img class="logo-image" src="images/fqas-logo.svg" alt="fqas">
+        </div>
+        <ul class="fqas-list block">
+          <li class="block-item">
+            <button type="button" class="fqas-link fqas-link-first">
               <div class="tips-item-wrap">
-                <span class="tips-item__num">1</span>
-                <span class="tips-item__title">System Patching</span>
+                <span class="fqas-item-num">Q</span>
+                <span class="fqas-item-title">What are your system requirements?</span>
               </div>
             </button>
-            <ul class="tips-sub hidden block-text">
-              <div class="tips-sub__item-wrapper">
-                <li class="item-title">System Patching</li>
-                <li class="tips-sub__item img-item">
-                  <img src="images/tips-img-1.svg" alt="tips-icon">
-                </li>
-              </div>
-              <div class="tips-sub__item-wrapper">
-                <li class="tips-sub__item">
-                  <p class="tips-sub__item-text tips-sub__item-text-top">
-                    There’s nothing hackers love more than a dismissed update reminder.
-                    We keep our team’s computers in shape and up to date so that they aren’t subject to attacks that
-                    could
-                    otherwise be avoided.
-                  </p>
-                  <p class="tips-sub__item-text">
-                    Not properly updating your systems makes you an easy to reach target and hackers will often go after
-                    the lowest hanging fruit.
-                    When it comes to maintaining a strong cybersecurity network the best thing a user can do is to
-                    prevent
-                    problems before they occur,
-                    and the easiest way to do that is by making sure that all systems are updated and updated regularly.
-                  </p>
-                </li>
-                <li class="tips-sub__item info-item">
-                  <img src="images/tips-info-icon.png" alt="info">
-                  <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
-                </li>
-              </div>
+            <ul class="hidden block-text-next">
+              <li class="tips-sub-item fqas-sub-item">
+                <span class="fqas-item-num">A</span>
+                <span class="fqas-item-title answer-title">Everyone needs cybersecurity. Some information requires more
+                  protection than other information, but our solution is adaptable to every business.
+                </span>
+              </li>
             </ul>
           </li>
-          <li class="border-item">
-            <button type="button" class="tips__link">
-              <span class="border-radius"></span>
+          <li>
+            <button type="button" class="fqas-link">
               <div class="tips-item-wrap">
-                <span class="tips-item__num">2</span>
-                <span class="tips-item__title">End-to-End Protection</span>
+                <span class="fqas-item-num">Q</span>
+                <span class="fqas-item-title">Is SKOUT windows and Mac compatible?</span>
               </div>
             </button>
-            <ul class="tips-sub hidden block-text">
-              <div class="tips-sub__item-wrapper">
-                <li class="item-title">End-to-End Protection</li>
-                <li class="tips-sub__item img-item">
-                  <img src="images/tips-img-2.svg" alt="tips-icon">
-                </li>
-              </div>
-              <div class="tips-sub__item-wrapper">
-                <li class="tips-sub__item">
-                  <p class="tips-sub__item-text tips-sub__item-text-top">
-                    51% of breaches involved malware, we cover your bases. Malware is classified as software that is
-                    designed with the intention of causing damage to your devices,
-                    whether those be phones, servers, laptops, or any other kind of device in the IoT.
-                  </p>
-                  <p class="tips-sub__item-text">
-                    Malware often takes the form of code, innocuous content, scripts or software.
-                    With SKOUT’s End-to-End Protection you can rest assured that all vulnerable points within your
-                    system are accounted for and safeguarded so
-                    that you don’t fall victim to malware of any kind.
-                  </p>
-                </li>
-                <li class="tips-sub__item info-item">
-                  <img src="images/tips-info-icon.png" alt="info">
-                  <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
-                </li>
-              </div>
+            <ul class="hidden block-text-next">
+              <li class="tips-sub-item fqas-sub-item">
+                <span class="fqas-item-num">A</span>
+                <span class="fqas-item-title answer-title">SKOUT will work on Windows, Mac, and Linux environments.
+                </span>
+              </li>
             </ul>
           </li>
-          <li class="border-item">
-            <button type="button" class="tips__link">
-              <span class="border-radius"></span>
+          <li>
+            <button type="button" class="fqas-link">
               <div class="tips-item-wrap">
-                <span class="tips-item__num">3</span>
-                <span class="tips-item__title">Empowering Teams</span>
+                <span class="fqas-item-num">Q</span>
+                <span class="fqas-item-title">Do I need an MSP or Technology provider to get SKOUT?</span>
               </div>
             </button>
-            <ul class="tips-sub hidden block-text">
-              <div class="tips-sub__item-wrapper">
-                <li class="item-title">Empowering Teams</li>
-                <li class="tips-sub__item img-item">
-                  <img src="images/tips-img-3.svg" alt="tips-icon">
-                </li>
-              </div>
-              <div class="tips-sub__item-wrapper">
-                <li class="tips-sub__item">
-                  <p class="tips-sub__item-text tips-sub__item-text-top">
-                    With 43% of breaches involving social attacks, cyber security is a team sport. We get your employees
-                    up to speed.
-                  </p>
-                  <p class="tips-sub__item-text">
-                    Our maturity model makes sure that every team is able to set security benchmarks and reach those
-                    benchmarks as certain cybersecurity requirements are met.
-                    Requirements could range from individuals setting up approved firewalls to everyone within a team
-                    taking on a complex password system.
-                    Small changes often make all the difference when trying to avoid a cybersecurity crisis and will
-                    allow you to find trouble before trouble finds you.
-                  </p>
-                </li>
-                <li class="tips-sub__item info-item">
-                  <img src="images/tips-info-icon.png" alt="info">
-                  <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
-                </li>
-              </div>
+            <ul class="hidden block-text-next">
+              <li class="tips-sub-item fqas-sub-item">
+                <span class="fqas-item-num">A</span>
+                <span class="fqas-item-title answer-title">SKOUT can work directly with your existing IT staff and
+                  security team, regardless if they are an MSP.</span>
+              </li>
             </ul>
           </li>
-          <li class="border-item border-item-last">
-            <button type="button" class="tips__link">
-              <span class="border-radius"></span>
+          <li>
+            <button type="button" class="fqas-link">
               <div class="tips-item-wrap">
-                <span class="tips-item__num">4</span>
-                <span class="tips-item__title">Secure Credentials</span>
+                <span class="fqas-item-num">Q</span>
+                <span class="fqas-item-title">Is there a trial program?</span>
               </div>
             </button>
-            <ul class="tips-sub hidden block-text">
-              <div class="tips-sub__item-wrapper">
-                <li class="item-title">Secure Credentials</li>
-                <li class="tips-sub__item img-item">
-                  <img src="images/tips-img-4.svg" alt="tips-icon">
-                </li>
+            <ul class="hidden block-text-next">
+              <li class="tips-sub-item fqas-sub-item">
+                <span class="fqas-item-num">A</span>
+                <span class="fqas-item-title answer-title">If you are interested in trying our platform but aren’t
+                  ready
+                  to buy, please reach out to us and we can try to work something out. SKOUT issues trial programs on a
+                  case by case basis.</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="fqas-link">
+              <div class="tips-item-wrap">
+                <span class="fqas-item-num">Q</span>
+                <span class="fqas-item-title">Can I get a Demo?</span>
               </div>
-              <div class="tips-sub__item-wrapper">
-                <li class="tips-sub__item">
-                  <p class="tips-sub__item-text tips-sub__item-text-top">
-                    81% of attacks involve stolen or weak credentials.
-                    The easiest way to protect yourself from having your credentials stolen is to make sure that they
-                    are not easy to replicate.
-                    This means including multiple characters and figures in your passwords, and not reusing the same
-                    passwords for multiple accounts.
-                    Also, it’s key to never store your passwords in one central location. Committing passwords to memory
-                    is often the best way to make sure that intruders don’t figure them out.
-                    All of these tips represent easy steps that you can take towards making your credentials stronger.
-                  </p>
-                </li>
-                <li class="tips-sub__item info-item">
-                  <img src="images/tips-info-icon.png" alt="info">
-                  <span class="tips-sub__text-info">Based on the 2018 Verizon Data Breach Report</span>
-                </li>
-              </div>
+            </button>
+            <ul class="hidden block-text-next">
+              <li class="tips-sub-item fqas-sub-item">
+                <span class="fqas-item-num">A</span>
+                <span class="fqas-item-title answer-title">We are happy to schedule a demo with you. Please reach out
+                  to
+                  us to get started.</span>
+              </li>
             </ul>
           </li>
         </ul>
+        <button class="fqas-btn" type="button">MORE QUESTIONS</button>
       </div>
-    </div>
-  </section>
-  <!----------tips-end----------->
-  <!----------glossary-start----------->
-  <section class="glossary section" id="glossary">
-    <div class="container">
-      <div class="glossary__img border-img">
-        <img class="mobile_img" src="images/logo-glossary_mobile.png" alt="glossary">
-        <img class="dekstop_img" src="images/logo-glossary.png" alt="glossary">
-      </div>
-    </div>
-    <div id="page" class="slider__wrapper">
-      <div class="row">
-        <div class="slider__inner">
-          <div class="slider slider-nav">
-            <div>
-              <h3><span>Botnet</span></h3>
-            </div>
-            <div>
-              <h3><span>Breach</span></h3>
-            </div>
-            <div>
-              <h3><span>Cloud</span></h3>
-            </div>
-            <div>
-              <h3><span>DDoS</span></h3>
-            </div>
-            <div>
-              <h3><span>Domain</span></h3>
-            </div>
-            <div>
-              <h3><span>Endpoint</span></h3>
-            </div>
-            <div>
-              <h3><span>Exploit</span></h3>
-            </div>
-            <div>
-              <h3><span>Firewall</span></h3>
-            </div>
-            <div>
-              <h3><span>IP Address</span></h3>
-            </div>
-            <div>
-              <h3><span>Malware</span></h3>
-            </div>
-            <div>
-              <h3><span>Penetration Test</span></h3>
-            </div>
-            <div>
-              <h3><span>Phishing/Spearphishing</span></h3>
-            </div>
-            <div>
-              <h3><span>ng</span></h3>
-            </div>
-            <div>
-              <h3><span>Ransomware</span></h3>
-            </div>
-            <div>
-              <h3><span>Session Hijacking</span></h3>
-            </div>
-            <div>
-              <h3><span>Social Engineering</span></h3>
-            </div>
-            <div>
-              <h3><span>Software</span></h3>
-            </div>
-            <div>
-              <h3><span>SOC</span></h3>
-            </div>
-            <div>
-              <h3><span>Trojan Horse</span></h3>
-            </div>
-            <div>
-              <h3><span>VPN</span></h3>
-            </div>
-            <div>
-              <h3><span>Virus</span></h3>
-            </div>
-            <div>
-              <h3><span>Worm</span></h3>
-            </div>
-            <div>
-              <h3><span></span></h3>
-            </div>
-            <div>
-              <h3><span></span></h3>
-            </div>
-            <div>
-              <h3><span></span></h3>
-            </div>
-          </div>
-          <div class="slider slider-single">
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Botnet</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Breach</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Cloud</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">DDoS</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Domain</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Endpoint</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Exploit</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Firewall</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">IP Address</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Malware</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Penetration Test</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Phishing/ Spearphishing</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">ng</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Ransomware</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Session Hijacking</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Social Engineering</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Software</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">SOC</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Trojan Horse</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">VPN</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Virus</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-            <div>
-              <h3 class="slider__title-wrapper">
-                <div class="slider__text-title">Worm</div>
-                <div class="slider__text-text">Malicious software that blocks access to a system until a ransom is paid.
-                </div>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!----------glossary-end----------->
-  <!----------FQAs-start----------->
-  <section class="fqas section" id="fqas">
-    <div class="container">
-      <div class="fqas__img border-img">
-        <img class="mobile_img" src="images/logo-fqas_mobile.png" alt="fqas">
-        <img class="dekstop_img" src="images/logo-fqas.png" alt="fqas">
-      </div>
-      <ul class="fqas-list block">
-        <li class="block__item">
-
-          <button type="button" class="fqas__link fqas__link-first">
-            <div class="tips-item-wrap">
-              <span class="fqas-item__num">Q</span>
-              <span class="fqas-item__title">What are your system requirements?</span>
-            </div>
-          </button>
-          <ul class="hidden block-text-next">
-            <li class="tips-sub__item fqas-sub__item">
-              <span class="fqas-item__num">A</span>
-              <span class="fqas-item__title answer-title">Everyone needs cybersecurity. Some information requires more
-                protection than other information, but our solution is adaptable to every business. </span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <button type="button" class="fqas__link">
-            <div class="tips-item-wrap">
-              <span class="fqas-item__num">Q</span>
-              <span class="fqas-item__title">Is SKOUT windows and Mac compatible?</span>
-            </div>
-          </button>
-          <ul class="hidden block-text-next">
-            <li class="tips-sub__item fqas-sub__item">
-              <span class="fqas-item__num">A</span>
-              <span class="fqas-item__title answer-title">SKOUT will work on Windows, Mac, and Linux environments.
-              </span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <button type="button" class="fqas__link">
-            <div class="tips-item-wrap">
-              <span class="fqas-item__num">Q</span>
-              <span class="fqas-item__title">Do I need an MSP or Technology provider to get SKOUT?</span>
-            </div>
-          </button>
-          <ul class="hidden block-text-next">
-            <li class="tips-sub__item fqas-sub__item">
-              <span class="fqas-item__num">A</span>
-              <span class="fqas-item__title answer-title">SKOUT can work directly with your existing IT staff and
-                security team, regardless if they are an MSP.</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <button type="button" class="fqas__link">
-            <div class="tips-item-wrap">
-              <span class="fqas-item__num">Q</span>
-              <span class="fqas-item__title">Is there a trial program?</span>
-            </div>
-          </button>
-          <ul class="hidden block-text-next">
-            <li class="tips-sub__item fqas-sub__item">
-              <span class="fqas-item__num">A</span>
-              <span class="fqas-item__title answer-title">If you are interested in trying our platform but aren’t ready
-                to buy, please reach out to us and we can try to work something out. SKOUT issues trial programs on a
-                case by case basis.</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <button type="button" class="fqas__link">
-            <div class="tips-item-wrap">
-              <span class="fqas-item__num">Q</span>
-              <span class="fqas-item__title">Can I get a Demo?</span>
-            </div>
-          </button>
-          <ul class="hidden block-text-next">
-            <li class="tips-sub__item fqas-sub__item">
-              <span class="fqas-item__num">A</span>
-              <span class="fqas-item__title answer-title">We are happy to schedule a demo with you. Please reach out to
-                us to get started.</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <button class="fqas-btn" type="button">MORE QUESTIONS</button>
-    </div>
-  </section>
-  <!----------FQAs-end----------->
+    </section>
+    <!----------FQAs-end----------->
+  </main>
   <!----------footer-start----------->
   <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__inner">
-        <div class="footer__item footer__item-left">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-item footer-item-left">
           <nav class="menu-footer">
             <div class="menu-list">
-              <ul class="menu-footer__list">
-                <li><a class="menu__link" href="#">Blog</a></li>
-                <li><a class="menu__link" href="#">Company</a></li>
-                <li><a class="menu__link" href="#">Terms & Conditions</a></li>
-                <li><a class="menu__link" href="#">Privacy Policy</a></li>
-                <li><a class="menu__link" href="#">Careers</a></li>
-                <li><a class="menu__link" href="#">Call the SOC</a><a class="phone"
-                    href="tel:18558384500">1-855-838-4500</a></li>
+              <ul class="menu-footer-list">
+                <li><a class="menu-link" href="#">Blog</a></li>
+                <li><a class="menu-link" href="#">Company</a></li>
+                <li><a class="menu-link" href="#">Terms & Conditions</a></li>
+                <li><a class="menu-link" href="#">Privacy Policy</a></li>
+                <li><a class="menu-link" href="#">Careers</a></li>
+                <li>
+                  <a class="menu-link" href="#">Call the SOC</a>
+                  <a class="phone" href="tel:18558384500">1-855-838-4500</a>
+                </li>
               </ul>
             </div>
           </nav>
         </div>
-        <div class="footer__item">
-          <div class="footer__item-inner">
+        <div class="footer-item">
+          <div class="footer-item-inner">
             <div>
               <ul>
                 <li>
-                  <h4 class="footer__title">New York</h4>
+                  <h4 class="footer-title">New York</h4>
                 </li>
-                <li class="item-second"><a class="phone" href="tel:16312036600">+1 631-203-6600</a></li>
+                <li class="item-second">
+                  <a class="phone" href="tel:16312036600">+1 631-203-6600</a>
+                </li>
                 <li class="item-address">
                   <address>423 W 55th St. 7th Floor New York, NY, 10019</address>
                 </li>
@@ -596,13 +604,15 @@
             </div>
             <div class="link"><a href="#">View Map</a></div>
           </div>
-          <div class="footer__item-inner">
+          <div class="footer-item-inner">
             <div>
               <ul>
                 <li>
-                  <h4 class="footer__title">Corporate Headquarters</h4>
+                  <h4 class="footer-title">Corporate Headquarters</h4>
                 </li>
-                <li class="item-second"><a class="phone" href="tel:16312036600">+1 631-203-6600</a></li>
+                <li class="item-second">
+                  <a class="phone" href="tel:16312036600">+1 631-203-6600</a>
+                </li>
                 <li class="item-address">
                   <address>423 W 55th St. 7th Floor New York, NY, 10019</address>
                 </li>
@@ -610,11 +620,11 @@
             </div>
             <div class="link"><a href="#">View Map</a></div>
           </div>
-          <div class="footer__item-inner">
+          <div class="footer-item-inner">
             <div>
               <ul>
                 <li>
-                  <h4 class="footer__title">EMEA</h4>
+                  <h4 class="footer-title">EMEA</h4>
                 </li>
                 <li class="item-second"><a class="phone" href="tel:16312036600">+1 631-203-6600</a></li>
                 <li class="item-address">
@@ -627,7 +637,7 @@
         </div>
       </div>
       <div class="social">
-        <div class="social__inner">
+        <div class="social-inner">
           <ul class="social-list">
             <li class="social-item">
               <a href="#">
@@ -666,8 +676,7 @@
               </a>
             </li>
           </ul>
-          <img class="mobile__img" src="images/logo-footer_mobile.png" alt="logo">
-          <img class="dekstop__img" src="images/logo-footer.png" alt="logo">
+          <img class="footer-logo-img" src="images/footer-logo.svg" alt="logo">
         </div>
       </div>
     </div>

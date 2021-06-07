@@ -1,77 +1,77 @@
 ////////////menu///////////
-const iconMenu = document.querySelector('.menu__icon');
+const iconMenu = document.querySelector('.hamburger-menu');
   if(iconMenu) {
-    const menuBody = document.querySelector('.menu__body');
-    iconMenu.addEventListener("click", function(e){
+    const menuBody = document.querySelector('.menu-body');
+    iconMenu.addEventListener('click', function(e){
       document.body.classList.toggle('lock');
       iconMenu.classList.toggle('active');
       menuBody.classList.toggle('active');
     });
   }
+//////tabs//////////
+  const section = document.querySelectorAll('.section');
+  const bannerSubMenu = document.querySelector('.header-banner-submenu');
+  const subMenuLinks =  document.querySelectorAll('.submenu a');
+  const subMenuItems = document.querySelectorAll('.submenu li');
 
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
-      document.querySelectorAll('.section').forEach((el, i) => {
-        if (el.offsetTop - document.querySelector('#banner-submenu').clientHeight <= scrollDistance) {
-          document.querySelectorAll('.submenu a').forEach((el) => {
-            if (el.classList.contains('tips-active')) {
-              el.classList.remove('tips-active');
-            }
-          });
-  
-          document.querySelectorAll('.submenu li')[i].querySelector('a').classList.add('tips-active');
-        }
-      });
+    section.forEach((el, i) => {
+      if (el.offsetTop - bannerSubMenu.clientHeight <= scrollDistance) {
+        subMenuLinks.forEach((el) => {
+          if (el.classList.contains('tips-active')) {
+            el.classList.remove('tips-active');
+          }
+        }); 
+        subMenuItems[i].querySelector('a').classList.add('tips-active');
+      }
+    });
   });
 ///////////accordeon///////////////
-
-const tipLink = document.querySelectorAll('.tips__link');
-const tipSub = document.querySelectorAll('.block-text');
+const tipLinks = document.querySelectorAll('.tips-link');
+const tipsSubs = document.querySelectorAll('.tips-sub');
 const tipsItemWrap = document.querySelectorAll('.tips-item-wrap');
 
-for (let i = 0; i < tipLink.length; i++) {
-  tipLink[i].addEventListener("click", () => {
-    tipSub[i].classList.toggle('hidden');
+for (let i = 0; i < tipLinks.length; i++) {
+  tipLinks[i].addEventListener('click', () => {
+    tipsSubs[i].classList.toggle('hidden');
     tipsItemWrap[i].classList.toggle('hidden');
-    console.log(tipsItemWrap[i]);
-    tipLink[i].classList.toggle('tips__link_active');
-    
+    tipLinks[i].classList.toggle('tips-link-active');    
   })
 }
 
-const fqasLink = document.querySelectorAll('.fqas__link');
+const fqasLinks = document.querySelectorAll('.fqas-link');
 const tipSubElem = document.querySelectorAll('.block-text-next');
 
-for (let i = 0; i < fqasLink.length; i++) {
-  fqasLink[i].addEventListener("click", () => {
+for (let i = 0; i < fqasLinks.length; i++) {
+  fqasLinks[i].addEventListener('click', () => {
     tipSubElem[i].classList.toggle('hidden');
-    fqasLink[i].classList.toggle('fqas__link_active');
+    fqasLinks[i].classList.toggle('fqas-link-active');
    })
 }
-////////tabs scroll
+////////tabs scroll/////////
+ window.addEventListener('scroll', function() {
+     const headerHeight = document.querySelector('.header-banner').clientHeight - document.querySelector('.header').clientHeight;
+     const faqHeight = this.document.getElementById('fqas').clientHeight;
+     const tipsHeight = this.document.getElementById('tips').clientHeight;
+     const glossaryHeight = this.document.getElementById('glossary').clientHeight;
+     const stickyMenu = document.querySelector('.header-banner-submenu');
+     const sumElemsHeight = faqHeight + tipsHeight + glossaryHeight;
+     let scrollDistance = window.scrollY;   
+     
+       if (scrollDistance > headerHeight && scrollDistance < sumElemsHeight) {
+         stickyMenu.classList.add('sticky');
+       } else {
+         stickyMenu.classList.remove('sticky');
+       }
+ });
 
-window.addEventListener("scroll", function() {
-  var headerH = document.getElementById("banner").clientHeight - document.getElementById("header").clientHeight;
-  var faqH = this.document.getElementById("fqas").clientHeight;
-  var tipsH = this.document.getElementById("tips").clientHeight;
-  var glossaryH = this.document.getElementById("glossary").clientHeight;
-  var stickyMenu = document.getElementById("banner-submenu")
-
-  if (window.scrollY > headerH && window.scrollY < faqH + tipsH + glossaryH) {
-    stickyMenu.classList.add('sticky');
-  }
-  else {
-    stickyMenu.classList.remove('sticky');
-  }
-});
-
-window.addEventListener("scroll", function() {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky-header", window.scrollY > 0);
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  header.classList.toggle('sticky-header', window.scrollY > 0);
 });
 
 ///////slider/////////////
-
 $(document).ready(function(){
   $('.slider-single').slick({
     slidesToShow: 1,
@@ -82,8 +82,7 @@ $(document).ready(function(){
     infinite: false,
     useTransform: true,
     speed: 400,
-    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-   
+    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',  
   });
  
   $('.slider-nav')
