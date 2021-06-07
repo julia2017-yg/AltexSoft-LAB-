@@ -59,7 +59,7 @@ body.lock {
   overflow: hidden;
 }
 .container {
-  max-width: 1440px;
+  max-width: 375px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -735,7 +735,6 @@ svg:hover .social-hover {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 18px 64px; 
   }
   .hamburger-menu {
     display: none;
@@ -849,7 +848,6 @@ svg:hover .social-hover {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 135px;
   }
   .header {
     padding: 20px 84px;
