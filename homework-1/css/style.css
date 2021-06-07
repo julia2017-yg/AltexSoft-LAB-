@@ -376,7 +376,7 @@ a.link-active {
 }
 .tips-link-active::before, 
 .tips-link-active::after {
-  background-color: #37e63e;
+  background-color: #22bf95;
   transition: transform 0.3s ease 0s;
 }
 .tips-link-active::before {
@@ -396,6 +396,9 @@ a.link-active {
   border-radius: 100%;
   right: 6px;
   top: 22px;
+}
+.tips-link-active .border-radius {
+  border: 2px solid #22bf95;
 }
 .tips-sub-item-text {
   max-width: 335px;
@@ -580,7 +583,7 @@ a.link-active {
 }
 .fqas-link-active::before, 
 .fqas-link-active::after {
-  background-color: #37e63e;
+  background-color: #22bf95;
 }
 .fqas-link-active::before {
   transform: rotate(-40deg);
