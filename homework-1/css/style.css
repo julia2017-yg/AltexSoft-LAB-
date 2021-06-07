@@ -96,6 +96,8 @@ body.lock {
   font-family: "Acme-Regular", sans-serif;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: #22bf95;
   cursor: pointer;
   position: relative;
