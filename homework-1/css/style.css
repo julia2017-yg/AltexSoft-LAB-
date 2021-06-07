@@ -231,7 +231,6 @@ body.lock {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 30px;
   padding: 67px 0 14px;
   max-width: 142px;
   width: 100%;
@@ -243,28 +242,17 @@ body.lock {
   top: -21px;
   width: 100%;
 }
-.submenu-item:first-child {
-  padding-right: 26px;
-  padding-top: 6px;
-}
-.submenu-item-middle {
-  padding-top: 5px;
-}
-.submenu-item:last-child {
-  padding-left: 24px;
-  padding-top: 6px;
-}
 .submenu-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0 7px;
+  padding: 11px 0 13px;
   background: #fff;
   box-shadow: 0px 12px 24px #f2f2f2;
   border-radius: 5px;
   border-top: 3px solid #37e63e;
 }
-.submenu-list a {
+.submenu-list .submenu-link {
   color: #7f7f7f;
   font-style: normal;
   font-weight: normal;
@@ -274,14 +262,14 @@ body.lock {
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: 0.5s;
+  padding: 0 24px;
 }
-.submenu-list a:hover {
+.submenu-list .submenu-link:hover {
   color: #37e63e;
 }
-.submenu-link {
+.submenu-list .submenu-link-border {
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
-  padding: 0 24px;
 }
 .header-banner {
   padding-bottom: 26px;
@@ -295,23 +283,23 @@ main {
 .sticky {
   position: fixed;
   top: 61px;
-  z-index: 20;
+  z-index: 7;
   width: 100%
 }
-.menu-item.active a:after {
+.menu-item.active .menu-link:after {
   width: 50%;
 }
-.menu-item a:hover:after,
-.menu-item a:focus:after {
+.menu-item .menu-link:hover:after,
+.menu-item .menu-link:focus:after {
   width: 50%;
 }
 .tips {
   padding-top: 43px;
 }
-a.tips-active {
+.submenu-link.tips-active {
   color: #37e63e;
 }
-a.link-active {
+.link-active {
   color: #37e63e;
 }
 .tips-sub {
@@ -687,14 +675,14 @@ address {
   max-width: 170px;
   width: 100%;
 }
-.link a {
+.link-map {
   font-family: "Aclonica-Regular", sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #37e63e;
   transition: 1s;
 }
-.link a:hover {
+.link-map:hover {
   color: #7f7f7f;
   text-decoration: underline;
 }
@@ -728,18 +716,21 @@ svg:hover .social-hover {
   .container {
     padding: 0 40px;
   }
-.header-banner-submenu {
-  padding: 0 37px;
-}
-.submenu-list .submenu-link {
-  padding: 0 80px;
-}
-.submenu-item:first-child {
-  padding-right: 80px;
-}
-.submenu-item:last-child {
-  padding-left: 80px;
-}
+  .header-banner-submenu {
+    padding: 0 37px;
+  }
+  .submenu-list .submenu-link {
+    padding: 0 80px;
+  }
+  .tips-link::before, 
+  .tips-link::after {
+    right: -307px;
+    top: 22px;
+  }
+  .border-radius {
+    right: -310px;
+    top: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -841,12 +832,6 @@ svg:hover .social-hover {
   .submenu-list .submenu-link {
     padding: 0 135px;
   }
-  .submenu-item:first-child {
-    padding-right: 135px;
-  }
-  .submenu-item:last-child {
-    padding-left: 135px;
-  }
   .sticky{
     top: 79px
   } 
@@ -881,12 +866,6 @@ svg:hover .social-hover {
   }
   .submenu-list a:hover {
     color: #22bf95;
-  }
-  .submenu-item:first-child {
-    padding-right: 102px;
-  }
-  .submenu-item:last-child {
-    padding-left: 102px;
   }
   .submenu-list .submenu-link {
     padding: 10px 102px;
@@ -1095,7 +1074,7 @@ svg:hover .social-hover {
     padding: 0 133px;
   }
   .footer-item-left {
-    margin-right: 165px;
+    margin-right: 100px;
   }
   .footer-inner {
     display: flex;
@@ -1105,10 +1084,10 @@ svg:hover .social-hover {
     border-top: 2px solid #22bf95;
     padding: 0;
   }
-  .footer-item-inner ul {
+  .footer-item-inner .footer-list {
     display: flex;
   }
-  .footer-item-inner ul li {
+  .footer-item-inner .footer-list li {
     padding: 4px 0 37px;
   }
   .footer-title {
@@ -1138,11 +1117,6 @@ svg:hover .social-hover {
     display: none;
     margin: 0;
   }
-  .social .dekstop-img {
-    display: block;
-    margin: 0;
-    height: 60px;
-  }
   .item-second {
     margin-left: 112px;
     margin-top: 7px;
@@ -1154,9 +1128,10 @@ svg:hover .social-hover {
   address {
     font-size: 16px;
     line-height: 24px;
-    width: 212px;
+    max-width: 212px;
+    width: 100%;
   }
-  .link a {
+  .link-map {
     color: #22bf95;
     margin-left: 105px;
     margin-top: 13px;
@@ -1165,5 +1140,7 @@ svg:hover .social-hover {
   }
   .footer-logo-img {
     margin: 0; 
+    max-width: 168px;
+    width: 100%;
   }
 }
