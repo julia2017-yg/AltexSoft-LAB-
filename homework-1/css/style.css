@@ -850,12 +850,16 @@ svg:hover .social-hover {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0;
+    padding: 0 135px;
   }
   .header {
     padding: 20px 84px;
     display: flex;
     align-items: center;
+   
+  }
+  .header .container{
+    padding: 0;
   }
   .header-button {
     margin-left: 50px;
@@ -877,7 +881,7 @@ svg:hover .social-hover {
     padding: 0 335px;
   }
   .sticky {
-    top: 83px
+    top: 100px
   } 
   .tips-active {
     color: #22bf95;
