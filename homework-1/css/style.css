@@ -771,7 +771,7 @@ svg:hover .social-hover {
     justify-content: flex-end;
   }
   .header-menu-list .menu-item {
-    margin-right: 50px;
+    padding: 10px 10px;
   }
   .header.sticky-header .menu-link {
     color: #b2b2b2; 
@@ -798,7 +798,7 @@ svg:hover .social-hover {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: 0;
+    margin: 0 0 0 10px;
     max-width: 294px;
     max-width: 300px;
   }
@@ -834,7 +834,7 @@ svg:hover .social-hover {
     padding: 0 135px;
   }
   .sticky{
-    top: 79px
+    top: 96px
   } 
   .border-top {
     padding: 19px 0 80px;
@@ -850,6 +850,7 @@ svg:hover .social-hover {
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding: 0;
   }
   .header {
     padding: 20px 84px;
@@ -857,6 +858,7 @@ svg:hover .social-hover {
     align-items: center;
   }
   .header-button {
+    margin-left: 50px;
     top: 0;
   }
   .header-banner .submenu-list {
