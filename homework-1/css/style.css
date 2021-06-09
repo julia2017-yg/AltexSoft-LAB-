@@ -412,8 +412,7 @@ main {
 .item-title{
   font-size: 24px;
   line-height: 32px;
-  margin-right: 115px;
-  margin-top: 18px;
+  margin: 18px 115px 0 0;
 }
 .img-item {
   display: flex;
@@ -452,8 +451,7 @@ main {
 .slider-inner .slider-single {
   max-width: 335px;
   width: 100%;
-  margin-top: 32px;
-  margin-left: 16px;
+  margin: 32px 0 0 16px;
 }
 .slider-inner .slider-single h3 {
   line-height: 32px;
@@ -508,13 +506,12 @@ main {
   color: #1a1a1a;
 }
 .slider-inner .slider-text-text {
-  margin-top: 24px;
+  margin: 24px 0 0 10px;
   font-size: 16px;
   line-height: 24px;
   color: #191919;
   max-width: 318px;
   width: 100%;
-  margin-left: 10px;
 }
 .slider-inner .slider-text-text::before{
   content: "";
@@ -799,7 +796,7 @@ svg:hover .social-hover {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 0 0 0 10px;
+    margin: 0 0 10px;
     max-width: 300px;
   }
   .get-button,
@@ -925,8 +922,7 @@ svg:hover .social-hover {
   .img-item .tips-image {
     max-width: 270px;
     width: 100%;
-    margin-top: 93px;
-    margin-bottom: 90px;
+    margin: 93px 0 90px;
   }
   .border-item {
     border-top: 2px solid #22bf95;
