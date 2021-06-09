@@ -1074,7 +1074,8 @@ svg:hover .social-hover {
     width: 100%;
   }
   .fqas-link-active {
-    width: 950px;
+    max-width: 950px;
+    width: 100%;
   }
   .footer {
     padding: 78px 0 100px;
