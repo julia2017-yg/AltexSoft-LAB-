@@ -600,12 +600,14 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #191919;
-  width: 176px;
+  max-width: 176px;
+  width: 100%;
   text-align: left;
   margin-left: 30px;
 }
 .answer-title{
-  width: 241px;
+  max-width: 241px;
+  width: 100%;
   font-size: 14px;
   line-height: 24px;
 }
@@ -618,8 +620,7 @@ main {
   text-transform: uppercase;
   color: #37e63e;
   display: block;
-  margin: 0 auto;
-  margin-top: 81px;
+  margin: 81px auto 0;
   transition: 1s;
 }
 .fqas-btn:hover {
@@ -664,8 +665,7 @@ main {
   width: 100%;
 }
 .phone {
-  margin-top: 4px;
-  margin-bottom: 10px;
+  margin: 4px 0 10px;
   font-size: 16px;
   line-height: 24px;
   color: #7f7f7f;
@@ -700,8 +700,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 29px;
-  padding-bottom: 14px;
+  padding: 29px 0 14px 0;
 }
 svg .social-hover {
   transition: 200ms;
@@ -802,7 +801,6 @@ svg:hover .social-hover {
     align-items: center;
     flex-direction: row;
     margin: 0 0 0 10px;
-    max-width: 294px;
     max-width: 300px;
   }
   .get-button,
@@ -859,7 +857,6 @@ svg:hover .social-hover {
     padding: 20px 84px;
     display: flex;
     align-items: center;
-   
   }
   .header .container{
     padding: 0;
@@ -899,8 +896,7 @@ svg:hover .social-hover {
     font-size: 110px;
     line-height: 130px;
     padding-left: 51px;
-    margin-bottom: 12px;
-    margin-right: 86px;
+    margin: 0 86px 12px 0;
   }
   .tips-item-title {
     font-size: 24px;
