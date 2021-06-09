@@ -659,6 +659,10 @@ main {
   color: #7f7f7f;
   padding: 8px 0;
 }
+.footer-list {
+  max-width: 176px;
+  width: 100%;
+}
 .phone {
   margin-top: 4px;
   margin-bottom: 10px;
@@ -674,8 +678,6 @@ address {
   font-size: 12px;
   line-height: 20px;
   color: #7f7f7f;
-  max-width: 170px;
-  width: 100%;
 }
 .link-map {
   font-family: "Aclonica-Regular", sans-serif;
@@ -716,6 +718,7 @@ svg:hover .social-hover {
 }
 @media (min-width: 767px) {
   .container {
+    max-width: 768px;
     padding: 0 40px;
   }
   .header-banner-submenu {
@@ -1082,24 +1085,40 @@ svg:hover .social-hover {
   .footer-item-left {
     margin-right: 100px;
   }
+  .footer-item-right{
+    flex: 0 0 77%;
+  }
   .footer-inner {
     display: flex;
   }
   .footer-item-inner {
     display: flex;
+    justify-content: space-between;
     border-top: 2px solid #22bf95;
     padding: 0;
   }
   .footer-item-inner .footer-list {
     display: flex;
+    padding: 9px 0 37px;
   }
-  .footer-item-inner .footer-list li {
-    padding: 4px 0 37px;
+  .footer-item-title {
+    flex: 0 0 300px;
+  }
+  .item-phone {
+    flex: 0 0 170px;
+    margin-left: 21px;
+  }
+  .item-address {
+    flex: 0 0 270px;
+    margin-left: 30px;
+  }
+  .item-link {
+    flex: 0 0 100px;
+    margin-left: 30px;
   }
   .footer-title {
     font-size: 24px;
     line-height: 36px;
-    width: 185px;
   }
   .menu-footer-list {
     padding-left: 0; 
@@ -1123,24 +1142,15 @@ svg:hover .social-hover {
     display: none;
     margin: 0;
   }
-  .item-second {
-    margin-left: 112px;
-    margin-top: 7px;
-  }
-  .item-address {
-    margin-left: 50px;
-    margin-top: 7px;
-  }
   address {
     font-size: 16px;
     line-height: 24px;
-    max-width: 212px;
-    width: 100%;
+  }
+  .phone {
+    margin: 0;
   }
   .link-map {
     color: #22bf95;
-    margin-left: 105px;
-    margin-top: 13px;
     font-size: 16px;
     line-height: 24px;
   }
