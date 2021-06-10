@@ -1,10 +1,10 @@
 html,
 body {
-	font-family: 'Aclonica-Regular';
+	font-family: $font-primary;
 	font-weight: 400;
 	height: 100%;
-	background-color: #fff;
-	color: #191919;
+	background-color: $bg-color-primary;
+	color: $color-text-primary;
 }
 .container{
 	max-width: 375px;

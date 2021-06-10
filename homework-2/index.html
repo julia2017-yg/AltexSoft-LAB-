@@ -12,26 +12,38 @@
 <body>
   <!------- header start -------->
   <header class="header">
-    <div class="header-container">
+    <div class="container">
       <div class="header-inner">
         <a class="logo-link" href="#">
           skout
         </a>
         <div class="header-menu menu">
-          <button class="menu-icon">
+          <button class="hamburger-menu">
             <span></span>
           </button>
           <nav class="menu-body">
             <ul class="menu-list">
-              <li class="link-hover-center"><a class="menu-link first-link" href="#">Why Skout </a></li>
-              <li class="link-hover-center"><a class="menu-link" href="#">Products</a></li>
-              <li class="link-hover-center"><a class="menu-link" href="#">Partners</a></li>
-              <li class="link-hover-center"><a class="menu-link" href="#">Company</a></li>
-              <li class="link-hover-center active"><a class="menu-link" href="#">Tips & Tools</a></li>
-              <li class="link-hover-center"><a class="menu-link" href="#">Blog</a></li>
+              <li class="menu-item">
+                <a class="menu-link first-link" href="#">Why Skout</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Products</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Partners</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Company</a>
+              </li>
+              <li class="menu-item item-active">
+                <a class="menu-link" href="#">Tips & Tools</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Blog</a>
+              </li>
               <div class="header-button">
-                <button class="get-link" type="button">Get Skout</button>
-                <button class="log-link" type="button">Log In</button>
+                <button class="get-btn btn" type="button">Get Skout</button>
+                <button class="log-btn btn" type="button">Log In</button>
               </div>
             </ul>
           </nav>
@@ -40,21 +52,23 @@
   </header>
   </div>
   </header>
-  <div class="hero" id="banner">
-    <h1 class="hero-title">Find trouble before trouble finds you.</h1>
-    <div class="hero-inner">
-      <div class="hero-item">
-        <p class="hero-text">
-          SKOUT is a cybersecurity company that delivers total protection for total peace of mind.
-          Whether you’re an international conglomerate or a mom-and-pop shop we make cybersecurity
-          easy and accessible because we believe security is universal and peace of mind is worth protecting.
-        </p>
-      </div>
-      <div class="hero-item">
-        <button type="button">Why SKOUT</button>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Find trouble before trouble finds you.</h1>
+      <div class="hero-inner">
+        <div class="hero-item">
+          <p class="hero-text">
+            SKOUT is a cybersecurity company that delivers total protection for total peace of mind.
+            Whether you’re an international conglomerate or a mom-and-pop shop we make cybersecurity
+            easy and accessible because we believe security is universal and peace of mind is worth protecting.
+          </p>
+        </div>
+        <div class="hero-item hero-item-btn">
+          <button class="hero-button btn" type="button">Why SKOUT</button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!------- header end -------->
   <!------- main start -------->
   <main class="main">
@@ -72,12 +86,12 @@
               </p>
             </div>
             <div class="about-item about-item-left">
-              <img src="images/security-img.png" alt="about-img">
+              <img class="about-img" src="images/security-img.png" alt="about-img">
             </div>
           </div>
-          <div class="about-btn btn">
-            <button class="btn-more" type="button">Learn more</button>
-            <button class="btn-product" type="button">Explore Products</button>
+          <div class="about-btn">
+            <button class="btn-more btn" type="button">Learn more</button>
+            <button class="btn-product btn" type="button">Explore Products</button>
           </div>
         </div>
       </div>
@@ -85,14 +99,14 @@
     <section class="essensials">
       <div class="container">
         <div class="essensials-inner">
-          <h3 class="essensials-title">Cybersecurity Essentials</h3>
+          <h3 class="essensials-title title">Cybersecurity Essentials</h3>
           <div class="essensials-cards">
             <div class="essensials-card">
               <div class="card">
                 <div class="card-inner">
                   <div class="card-wrapper">
                     <h4 class="card-title">System Patching</h4>
-                    <p class="card-text">
+                    <p class="card-text text">
                       There’s nothing hackers love more than a dismissed update reminder.
                       We keep your team’s computers in shape and up-to-date.
                     </p>
@@ -103,11 +117,11 @@
                   <img class="info-icon" src="images/info-icon.svg" alt="info">
                 </div>
               </div>
-              <div class="card  card-second">
+              <div class="card card-second">
                 <div class="card-inner">
                   <div class="card-wrapper">
                     <h4 class="card-title">End-to-End Protection</h4>
-                    <p class="card-text">
+                    <p class="card-text text">
                       51% of breaches involved malware that infects endpoints. We cover your bases.
                     </p>
                   </div>
@@ -123,7 +137,8 @@
                 <div class="card-inner">
                   <div class="card-wrapper">
                     <h4 class="card-title">Empowering Teams</h4>
-                    <p class="card-text">With 43% of breaches involving social attacks, cybersecurity is a team sport.
+                    <p class="card-text text">With 43% of breaches involving social attacks, cybersecurity is a team
+                      sport.
                       We get your employees up to speed.
                     </p>
                   </div>
@@ -137,7 +152,7 @@
                 <div class="card-inner">
                   <div class="card-wrapper">
                     <h4 class="card-title">Secure Credentials</h4>
-                    <p class="card-text">81% of attacks involve stolen or weak credentials. </p>
+                    <p class="card-text text">81% of attacks involve stolen or weak credentials. </p>
                   </div>
                   <img class="card-icon" src="images/credentials-img.svg" alt="icon">
                 </div>
@@ -159,9 +174,9 @@
         <div class="slider">
           <div class="slider_inner">
             <div class="slider-item">
-              <img src="images/slider-solve-1.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-1.png" alt="slide">
               <div>
-                <h5>Threat Intelligence</h5>
+                <h5 class="slide-title title">Threat Intelligence</h5>
                 <p class="slider-text">
                   Our team is part of a global network of public and private sector businesses
                   and agencies that share the latest intelligence on emerging threats,
@@ -171,111 +186,553 @@
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-2.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-2.png" alt="slide">
               <div>
-                <h5>Traffic Blindspots</h5>
+                <h5 class="slide-title title">Traffic Blindspots</h5>
                 <p class="slider-text">
-                  We keep a close eye on all the comings and goings on every network. 
-                  Monitoring activity from your infrastructure, desktops, services, 
-                  endpoints, and other sources, we can detect openings that could leave 
+                  We keep a close eye on all the comings and goings on every network.
+                  Monitoring activity from your infrastructure, desktops, services,
+                  endpoints, and other sources, we can detect openings that could leave
                   you vulnerable to threats.
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-3.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-3.png" alt="slide">
               <div>
-                <h5>Abnormal Activity</h5>
+                <h5 class="slide-title title">Abnormal Activity</h5>
                 <p class="slider-text">
-                  Patterns exist in every network. Our platform synthesizes every 
-                  byte of data to detect anomalies that could indicate a threat. 
-                  A single outlier in the system can mean the difference between a simple 
+                  Patterns exist in every network. Our platform synthesizes every
+                  byte of data to detect anomalies that could indicate a threat.
+                  A single outlier in the system can mean the difference between a simple
                   alert and a system failure.
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-4.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-4.png" alt="slide">
               <div>
-                <h5>System Error</h5>
+                <h5 class="slide-title title">System Error</h5>
                 <p class="slider-text">
-                  Sometimes, an anomaly is just that. An outlier in a 
-                  larger pattern that doesn’t indicate a larger attack. 
-                  It takes a human to know the difference between danger and random data. 
+                  Sometimes, an anomaly is just that. An outlier in a
+                  larger pattern that doesn’t indicate a larger attack.
+                  It takes a human to know the difference between danger and random data.
                   Our team of security professionals is trained to do just that.
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-5.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-5.png" alt="slide">
               <div>
-                <h5>Missed Connections</h5>
+                <h5 class="slide-title title">Missed Connections</h5>
                 <p class="slider-text">
                   When we find trouble, we don’t just send a simple report.
-                   We send a comprehensive gameplan that outlines the severity of the threat, 
-                   all the technical information you need, and the steps to seal off your vulnerabilities and stop the threat. 
+                  We send a comprehensive gameplan that outlines the severity of the threat,
+                  all the technical information you need, and the steps to seal off your vulnerabilities and stop the
+                  threat.
                   Plus, we include a report in plain English that summarizes the event simply and succinctly
-                </p>
-              </div>             
-            </div>
-            <div class="slider-item">
-              <img src="images/slider-solve-6.png" alt="slide">
-              <div>
-                <h5>Waiting Times</h5>
-                <p class="slider-text">
-                  Our personnel are always available by phone and email to answer any questions you might have. 
-                  In the event of a breach, we will be there to document every bit of data and assist you with 
-                  reporting the attack to both internal staff and any governing agencies that need to be informed. 
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-7.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-6.png" alt="slide">
               <div>
-                <h5>Radio Silence</h5>
+                <h5 class="slide-title title">Waiting Times</h5>
                 <p class="slider-text">
-                  Some firms might be comfortable with reaching out only when threats appear, 
-                  but we believe that cybersecurity is a full-time job. 
-                  That’s why we perform quarterly vulnerability scans to make sure threats 
-                  don’t slip through the cracks, providing every client with executive reports that 
+                  Our personnel are always available by phone and email to answer any questions you might have.
+                  In the event of a breach, we will be there to document every bit of data and assist you with
+                  reporting the attack to both internal staff and any governing agencies that need to be informed.
+                </p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <img class="slide-img" src="images/slider-solve-7.png" alt="slide">
+              <div>
+                <h5 class="slide-title title">Radio Silence</h5>
+                <p class="slider-text">
+                  Some firms might be comfortable with reaching out only when threats appear,
+                  but we believe that cybersecurity is a full-time job.
+                  That’s why we perform quarterly vulnerability scans to make sure threats
+                  don’t slip through the cracks, providing every client with executive reports that
                   outline the progress that has been made and where extra resources are needed.
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-8.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-8.png" alt="slide">
               <div>
-                <h5>Up To Date Solutions</h5>
+                <h5 class="slide-title title">Up To Date Solutions</h5>
                 <p class="slider-text">
-                  Every company has different needs. 
-                  That’s why our executive reports provide our clients with an opportunity to keep us up-to-date 
-                  on new software, systems, and infrastructure that reshapes the equation. 
-                  This allows us to provide critical services that are tailored to your specific business, when and where you need them most.
+                  Every company has different needs.
+                  That’s why our executive reports provide our clients with an opportunity to keep us up-to-date
+                  on new software, systems, and infrastructure that reshapes the equation.
+                  This allows us to provide critical services that are tailored to your specific business, when and
+                  where you need them most.
                 </p>
               </div>
             </div>
             <div class="slider-item">
-              <img src="images/slider-solve-9.png" alt="slide">
+              <img class="slide-img" src="images/slider-solve-9.png" alt="slide">
               <div>
-                <h5>Test Anxiety</h5>
+                <h5 class="slide-title title">Test Anxiety</h5>
                 <p class="slider-text">
-                  We believe that you shouldn’t be caught off-guard on game day. 
-                  It’s just one reason why we practice penetration testing. 
-                  Performing an actual, controlled attack on your system, 
-                  we can determine if the measures in place are able to defend against data breaches in the event of a real threat.
+                  We believe that you shouldn’t be caught off-guard on game day.
+                  It’s just one reason why we practice penetration testing.
+                  Performing an actual, controlled attack on your system,
+                  we can determine if the measures in place are able to defend against data breaches in the event of a
+                  real threat.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div class="solve-btn">
-          <button type="button">Get SKOUT</button>
+          <button class="get-btn btn" type="button">Get SKOUT</button>
+        </div>
+      </div>
+    </section>
+    <section class="planse">
+      <div class="plans-wrapper">
+        <h3 class="planse-title">SKOUT Plans</h3>
+        <div class="planse-card-inner">
+          <div class="planse-card">
+            <div class="planse-card-title-wrapper">
+              <h4 class="card-title title">Bronze</h4>
+            </div>
+            <ul class="planse-card-list">
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Security Training</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Email</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Endpoint</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Monitoring</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Annual Pro Services</span>
+              </li>
+            </ul>
+            <div class="planse-btn">
+              <button class="btn-request btn" type="button">Request a Quote</button>
+            </div>
+          </div>
+          <div class="planse-card">
+            <div class="planse-card-title-wrapper">
+              <h4 class="card-title title">Silver</h4>
+            </div>
+            <ul class="planse-card-list">
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Security Training</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Email</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Endpoint</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Monitoring</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Annual Pro Services</span>
+              </li>
+            </ul>
+            <div class="planse-btn">
+              <button class="btn-request btn" type="button">Request a Quote</button>
+            </div>
+          </div>
+          <div class="planse-card">
+            <div class="planse-card-title-wrapper">
+              <h4 class="card-title title">Gold</h4>
+            </div>
+            <ul class="planse-card-list">
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Security Training</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Email</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Endpoint</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Monitoring</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="minus-icon"></span>
+                <span class="card-item card-item-minus">Annual Pro Services</span>
+              </li>
+            </ul>
+            <div class="planse-btn">
+              <button class="btn-request btn" type="button">Request a Quote</button>
+            </div>
+          </div>
+          <div class="planse-card planse-card-plus">
+            <div class="planse-card-title-wrapper">
+              <h4 class="card-title title">Plus</h4>
+            </div>
+            <ul class="planse-card-list">
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Security Training</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Email</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Endpoint</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Monitoring</span>
+              </li>
+              <li class="card-item-wrapper">
+                <span class="check-icon"></span>
+                <span class="card-item">Annual Pro Services</span>
+              </li>
+            </ul>
+            <div class="planse-btn">
+              <button class="btn-request btn" type="button">Request a Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-logo">
+      <div class="container">
+        <div class="slider-logo-inner">
+          <div class="slider-logo-single">
+            <div>
+              <img class="single-img" src="images/slide-img-1.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-2.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-3.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-4.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-5.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-1.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-2.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-3.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-4.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+            <div>
+              <img class="single-img" src="images/slide-img-5.svg" alt="slide logo">
+              <div class="description">
+                <p class="description-text">
+                  “Skout helped us bring our security and operations forward dramatically by being so responsive and
+                  detail-oriented.
+                  The whole team is really great to work with.”
+                </p>
+                <h5 class="description-title">— Yoni Rechtman</h5>
+              </div>
+            </div>
+          </div>
+          <div class="slider-logo-list">
+            <div>
+              <img class="img-logo" src="images/slide-img-1.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-2.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-3.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-4.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-5.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-1.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-2.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-3.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-4.svg" alt="slide logo">
+            </div>
+            <div>
+              <img class="img-logo" src="images/slide-img-5.svg" alt="slide logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+
+      <div class="services-inner">
+        <div class="services-item services-item-text">
+          <h3 class="services-title title">Still have questions? Reach out today.</h3>
+          <p class="services-text text">
+            Whether you’re a potential management service provider or a business owner looking for a little extra peace
+            of mind,
+            our representatives are standing by to answer any questions and walk you through the benefits of partnering
+            with us.
+          </p>
+        </div>
+        <div class="services-item">
+          <img class="services-img" src="images/services-img.png" alt="services image">
+        </div>
+      </div>
+      <div class="container">
+        <div class="get-more">
+          <div class="get-more-item">
+            <h5 class="get-more-title">Ready to learn more?</h5>
+            <div class="get-more-link">
+              <a class="get-link" href="#">
+                <span class="get-text get-text-touch">Get in Touch</span>
+                <span class="arrow right"></span>
+              </a>
+            </div>
+          </div>
+          <div class="get-more-item get-item">
+            <h5 class="get-more-title">Are you a MSP?</h5>
+            <div class="get-more-link">
+              <a class="get-link" href="#">
+                <span class="get-text">Become a Partner</span>
+                <span class="arrow right"></span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <!------- main end-------->
-  <footer class="footer"></footer>
+  <!----------footer-start----------->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-item footer-item-left">
+          <nav class="menu-footer">
+            <div class="menu-list">
+              <ul class="menu-footer-list">
+                <li><a class="menu-link" href="#">Blog</a></li>
+                <li><a class="menu-link" href="#">Company</a></li>
+                <li><a class="menu-link" href="#">Terms & Conditions</a></li>
+                <li><a class="menu-link" href="#">Privacy Policy</a></li>
+                <li><a class="menu-link" href="#">Careers</a></li>
+                <li>
+                  <a class="menu-link" href="#">Call the SOC</a>
+                  <a class="phone" href="tel:18558384500">1-855-838-4500</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-item footer-item-right">
+          <div class="footer-item-inner">
+            <div>
+              <ul class="footer-list">
+                <li class="footer-item-title">
+                  <h4 class="footer-title">New York</h4>
+                </li>
+                <li class="item-phone">
+                  <a class="phone" href="tel:16312036600">+1 631-203-6600</a>
+                </li>
+                <li class="item-address">
+                  <address>423 W 55th St. 7th Floor New York, NY, 10019</address>
+                </li>
+                <li class="item-link">
+                  <a class="link-map" href="#">View Map</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item-inner">
+            <div>
+              <ul class="footer-list">
+                <li class="footer-item-title">
+                  <h4 class="footer-title">Corporate Headquarters</h4>
+                </li>
+                <li class="item-phone">
+                  <a class="phone" href="tel:16312036600">+1 631-203-6600</a>
+                </li>
+                <li class="item-address">
+                  <address>423 W 55th St. 7th Floor New York, NY, 10019</address>
+                </li>
+                <li class="item-link">
+                  <a class="link-map" href="#">View Map</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item-inner">
+            <div>
+              <ul class="footer-list">
+                <li class="footer-item-title">
+                  <h4 class="footer-title">EMEA</h4>
+                </li>
+                <li class="item-phone">
+                  <a class="phone" href="tel:16312036600">+1 631-203-6600</a>
+                </li>
+                <li class="item-address">
+                  <address>423 W 55th St. 7th Floor New York, NY, 10019</address>
+                </li>
+                <li class="item-link">
+                  <a class="link-map" href="#">View Map</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <div class="social-inner">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#">
+                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.22744 23.125C20.3121 23.125 26.3776 14.2255 26.3776 6.52098C26.3776 6.27061 26.3776 6.02024 26.3658 5.76987C27.5413 4.95048 28.5639 3.91486 29.375 2.74268C28.2936 3.20928 27.1299 3.51655 25.9074 3.66449C27.1534 2.94753 28.1055 1.79811 28.5639 0.432456C27.4002 1.1039 26.1072 1.58188 24.7319 1.84363C23.627 0.705586 22.0636 0 20.3356 0C17.0091 0 14.3055 2.6175 14.3055 5.83815C14.3055 6.29337 14.3642 6.73721 14.4583 7.16966C9.45078 6.93067 5.0075 4.59769 2.03356 1.06976C1.51636 1.93467 1.22249 2.93615 1.22249 4.00591C1.22249 6.03162 2.29217 7.81834 3.90256 8.86534C2.91517 8.8312 1.98654 8.56945 1.17547 8.137C1.17547 8.15976 1.17547 8.18252 1.17547 8.21666C1.17547 11.039 3.25605 13.4061 6.00665 13.941C5.5012 14.0776 4.97224 14.1459 4.41977 14.1459C4.03186 14.1459 3.65571 14.1117 3.29132 14.0434C4.05537 16.365 6.28877 18.0493 8.92182 18.0949C6.85299 19.6654 4.2552 20.5985 1.43407 20.5985C0.952131 20.5985 0.470188 20.5758 0 20.5189C2.65656 22.1577 5.83033 23.125 9.22744 23.125Z"
+                    fill="#7F7F7F" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.6184 0H1.38158C0.618554 0 0 0.618554 0 1.38158V23.6184C0 24.3814 0.618554 25 1.38158 25H13.3553V15.3509H10.0877V11.5482H13.3377V8.77193C13.3377 5.53947 15.307 3.7807 18.1886 3.7807C19.1675 3.78361 20.1455 3.83925 21.1184 3.94737V7.32018H19.1272C17.5614 7.32018 17.2588 8.0614 17.2588 9.15351V11.5658H21.0088L20.5219 15.3509H17.2588V25H23.6184C24.3814 25 25 24.3814 25 23.6184V1.38158C25 0.618554 24.3814 0 23.6184 0Z"
+                    fill="#7F7F7F" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.6776 16.2484V6.75159L21.0085 11.5002L12.6776 16.2484ZM31.2089 3.76345C30.8423 2.38042 29.7622 1.29135 28.3908 0.921734C25.9051 0.25 15.9375 0.25 15.9375 0.25C15.9375 0.25 5.96986 0.25 3.48415 0.921734C2.11281 1.29135 1.03268 2.38042 0.666115 3.76345C0 6.27002 0 11.5 0 11.5C0 11.5 0 16.7298 0.666115 19.2366C1.03268 20.6196 2.11281 21.7086 3.48415 22.0784C5.96986 22.75 15.9375 22.75 15.9375 22.75C15.9375 22.75 25.9051 22.75 28.3908 22.0784C29.7622 21.7086 30.8423 20.6196 31.2089 19.2366C31.875 16.7298 31.875 11.5 31.875 11.5C31.875 11.5 31.875 6.27002 31.2089 3.76345Z"
+                    fill="#7F7F7F" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.3035 21.3028H17.5958V15.5007C17.5958 14.1174 17.5722 12.3375 15.6694 12.3375C13.7396 12.3375 13.4451 13.8451 13.4451 15.4021V21.3028H9.74167V9.37222H13.2958V11.0035H13.3472C13.8417 10.0653 15.0514 9.07639 16.8549 9.07639C20.6097 9.07639 21.3035 11.5465 21.3035 14.7597V21.3028ZM5.56111 7.74236C4.37014 7.74236 3.40972 6.77917 3.40972 5.59167C3.40972 4.40486 4.37014 3.44167 5.56111 3.44167C6.74722 3.44167 7.70972 4.40486 7.70972 5.59167C7.70972 6.77917 6.74722 7.74236 5.56111 7.74236ZM3.70417 21.3028H7.41597V9.37222H3.70417V21.3028ZM23.15 0H1.84375C0.826389 0 0 0.806944 0 1.80278V23.1958C0 24.1917 0.826389 25 1.84375 25H23.15C24.1694 25 24.9993 24.1917 24.9993 23.1958V1.80278C24.9993 0.806944 24.1694 0 23.15 0Z"
+                    fill="#7F7F7F" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <img class="footer-logo-img" src="images/footer-logo.svg" alt="logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!----------footer-end----------->
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

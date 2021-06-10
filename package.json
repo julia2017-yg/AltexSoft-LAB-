@@ -1,0 +1,19 @@
+{
+  "name": "altexsoft-lab-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julia2017-yg/AltexSoft-LAB-.git"
+  },
+  "author": "julia buibarova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julia2017-yg/AltexSoft-LAB-/issues"
+  },
+  "homepage": "https://github.com/julia2017-yg/AltexSoft-LAB-#readme"
+}
