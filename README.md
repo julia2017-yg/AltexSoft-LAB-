@@ -1,1 +1,0 @@
-# AltexSoft-LAB-
