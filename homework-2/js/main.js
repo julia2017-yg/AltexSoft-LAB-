@@ -86,7 +86,4 @@ $(document).ready(function(){
       $('.planse-card-inner.slick-initialized').slick('unslick');
     }
   });
-
-
-  
 });
