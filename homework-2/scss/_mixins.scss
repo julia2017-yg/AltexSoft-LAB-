@@ -1,15 +1,15 @@
 
-@mixin tablet{
+@mixin tablet {
   @media only screen and (min-width: $tablet){
     @content
   }
 }
-@mixin desktop{
+@mixin desktop {
   @media only screen and (min-width: $desktop){
     @content
   }
 }
-@mixin widescreen{
+@mixin widescreen {
   @media only screen and (min-width: $widescreen){
     @content
   }

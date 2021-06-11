@@ -74,7 +74,7 @@ $(document).ready(function(){
   });
   //slider plans 
   $(window).on('load resize', function() {
-    if ($(window).width() < 640) {
+    if ($(window).width() < 767) {
       $('.planse-card-inner:not(.slick-initialized)').slick({
         dots: false,
         arrows: false,

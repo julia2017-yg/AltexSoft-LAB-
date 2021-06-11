@@ -4,10 +4,10 @@
 @import 'global';
 @import 'mixins';
 
-body.lock{
+body.lock {
   overflow: hidden;
 }
-.btn{
+.btn {
   width: 100%;
   padding: 8px 0; 
   border-radius: $button-border-radius;
@@ -20,15 +20,15 @@ body.lock{
   text-align: center;
   text-transform: uppercase; 
 }
-.title{
+.title {
   font-size: 24px;
   line-height: 36px;
 }
-.text{
+.text {
   font-size: 10px;
   line-height: 18px;
 }
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -36,12 +36,12 @@ body.lock{
   padding: 20px 0 20px;
   z-index: 10; 
   transition: 0.6s;
-  &-inner{
+  &-inner {
     @extend %flex-primary;
     justify-content: space-between;
     background: transparent;  
   }
-  .logo-link{
+  .logo-link {
     position: relative;
     color: $color-text-header;
     font-family: $font-hero-title, sans-serif;
@@ -51,22 +51,22 @@ body.lock{
     letter-spacing: 2px;
     text-transform: uppercase;      
   }  
-  .header-button{
+  .header-button {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 110px;
     max-width: 180px;
     width: 100%;
-    & .btn{
+    & .btn {
       color: $color-button;
       border: 1px solid $button-border-color;
       width: 100%;
     }
-    & .get-btn{
+    & .get-btn {
       margin-right: 0;
     }
-    & .log-btn{
+    & .log-btn {
       max-width: 90px;
       margin-top: 16px;
     }
@@ -74,7 +74,7 @@ body.lock{
 }
 .sticky-header {
   background: $bg-sticky-header;
-  & .logo-link{
+  & .logo-link {
     color: $sticky-logo;
   }
   & .hamburger-menu::before, 
@@ -83,7 +83,7 @@ body.lock{
       background-color: $bg-sticky-hamburger-menu;
   }
 }
-.hamburger-menu{
+.hamburger-menu {
   position: relative;
   display: block;
   height: 18px;
@@ -91,7 +91,7 @@ body.lock{
   cursor: pointer;
   &::before,
   &::after,
-  & span{
+  & span {
     position: absolute;
     left: 0;
     height: 10%;
@@ -100,32 +100,32 @@ body.lock{
     transition: all 0.3s ease 0s;
   }
   &::before,
-  &::after{
+  &::after {
     content: '';
   }
-  &::before{
+  &::before {
     top: 0;
   }
-  &::after{
+  &::after {
     bottom: 0;
   }
-  & span{
+  & span {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
-  &.active span{
+  &.active span {
     transform: scale(0) translate(0px, -50%);
   }
-  &.active::before{
+  &.active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
   }
-  &.active::after{
+  &.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
   }
 }
-.menu-body{
+.menu-body {
   position: absolute;
   top: 70px;
   left: 0;
@@ -134,21 +134,21 @@ body.lock{
   background-color: $bg-color-primary;
   transition: transform .5s ease-out;
   transform: translateY(-130%);
-  .menu-list{
+  .menu-list {
     position: relative;
     @extend %flex-primary;
     flex-direction: column;
     width: 100%;
     padding-top: 40px;  
   }
-  &.active{
+  &.active {
     display: flex;
     flex-direction: column;    
     height: 100vh;    
     align-items: center;
     transform: translateY(0px);
   }
-  & .menu-link{
+  & .menu-link {
     position: relative;
     display: inline-block;
     padding: 6px 0;
@@ -161,10 +161,10 @@ body.lock{
     text-transform: uppercase;
     cursor: pointer; 
   }
-  & .item-active.menu-link::after{
+  & .item-active.menu-link::after {
     width: 50%;
   }
-  & .menu-item .menu-link:after{         
+  & .menu-item .menu-link:after {         
     content: '';
     position: absolute;
     left: 50%;
@@ -172,26 +172,24 @@ body.lock{
     height: 2px;
     width: 0%;
     background-color: $bg-underline-link;   
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz--transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     transform: translateX(-50%);
   }
   & .menu-item .menu-link:hover:after,
-  & .menu-item .menu-link:focus:after{
+  & .menu-item .menu-link:focus:after {
     width: 50%;
   }
 }
-.hero{
+.hero {
   position: relative;
   padding-bottom: 51px;
   background-image: $img-bg-hero;
-  &-inner{
+  &-inner {
     @extend %flex-primary;
     flex-direction: column;
     justify-content: center;
   }
-  &-title{
+  &-title {
     max-width: 315px;
     margin: 0 auto;
     padding: 75px 0 62px;
@@ -203,7 +201,7 @@ body.lock{
     text-align: center;   
     text-transform: uppercase;   
   }
-  &-text{
+  &-text {
     position: relative;
     max-width: 290px;
     width: 100%;
@@ -212,23 +210,23 @@ body.lock{
     font-size: 13px;
     line-height: 24px;    
     text-shadow: $hero-text-shadow;   
-    &::before{
+    &::before {
        content: '';
        position: absolute;
        top: 0;
        left: -30px;
        width: 2px;
        height: 145px;
-       box-shadow: 0px 2px 4px rgba(127, 127, 127, 0.3);
+       box-shadow: $hero-text-shadow;
        background-color: $bg-color-primary;
     }
   } 
-  &-item-btn{
+  &-item-btn {
     max-width: 208px;
     width: 100%;
     margin: 0 auto;   
   }
-  &-button{
+  &-button {
     max-width: 208px;
     background: $button-bg-light;
     box-shadow: $button-box-shadow;
@@ -237,75 +235,75 @@ body.lock{
     margin-top: 30px;   
   } 
 }
-.about{
+.about {
   padding: 60px 0 80px;
-  &-items{
+  &-items {
     @extend %flex-primary;
     flex-direction: column;
   }
-  &-img{
+  &-img {
     max-width: 270px;
     width: 100%;
     margin: 20px auto 0;
   }
-  &-title{
+  &-title {
     @extend %title-section-secondary;
   }
-  &-text{
+  &-text {
     @extend %title-section-text-mobile;
     max-width: 309px;
     width: 100%;
     margin-top: 20px;
   }
-  &-btn{
+  &-btn {
     display: flex;
     flex-direction: column;
     max-width: 209px;
     width: 100%;
     margin: 0 auto;   
-    & .btn-more{
+    & .btn-more {
       @extend %button-light;
       margin-top: 30px;
       padding: 8px 0;
     }
-    & .btn-product{
+    & .btn-product {
       @extend %button-dark;
       margin-top: 30px;
       padding: 8px 0;
     }
   }
 }
-.essensials{
+.essensials {
   padding-bottom: 88px;
-  &-title{
+  &-title {
     @extend %title-section-secondary;
     max-width: 300px;
   }
 }
-.card{
+.card {
   background: $bg-color-primary;
   box-shadow: 0px 12px 24px #E5E5E5;
   border-radius: 5px;
   margin-top: 10px; 
   padding: 30px 15px 10px 42px;
   border-left: 5px solid #22BF95;
-  &-inner{
+  &-inner {
     display: flex;
     align-items: center;
   }
-  &-info{
+  &-info {
     display: flex;
     justify-content: flex-end;
   }
-  &-icon{
+  &-icon {
     width: 58px;
     margin-left: 15px;
   }
-  & .info-icon{
+  & .info-icon {
     width: 19px;
     height: 19px;
   }
-  &-text{
+  &-text {
     max-width: 182px;
     width: 100%;
     font-size: 10px;
@@ -313,25 +311,25 @@ body.lock{
     margin-top: 22px;
   }
 }
-.card-btn{
+.card-btn {
   display: flex;
   flex-direction: column;
   max-width: 209px;
   width: 100%;
   margin: 0 auto;
-  & .btn-product{
+  & .btn-product {
     margin-top: 80px;
     color: $color-button-text-primary;
     background-color: $button-bg-dark;
   }
 }
-.solve{
+.solve {
   padding: 36px 0 350px;
   background-image: $img-bg-slider-solve;
-  &-title{
+  &-title {
     @extend %title-section-secondary;
   }
-  &-btn{
+  &-btn {
     max-width: 208px;
     margin: 25px auto 0;
     .get-btn{
@@ -339,11 +337,11 @@ body.lock{
     }   
   }
 }
-.slider{
+.slider {
   position: relative;
-  &-item{
+  &-item {
     margin-top: 80px;
-    .slide-title{
+    .slide-title {
       margin-top: 15px;
       font-family: $font-title, sans-serif;
       font-size: 12px;
@@ -352,13 +350,13 @@ body.lock{
       text-transform: uppercase;     
     }   
   }
-  &-text{
+  &-text {
     @extend %title-section-text-mobile;
     max-width: 316px;
     margin-top: 15px;
   }
 }
-.my-dots{
+.my-dots {
   position: absolute;
   top: 40px;
   left: 0;
@@ -370,7 +368,7 @@ body.lock{
   padding: 0;
   list-style: none;
   text-align: center;
-  & li{
+  & li {
     position: relative;
     display: inline-block;
     width: 18px;
@@ -378,7 +376,7 @@ body.lock{
     margin: 0;
     padding: 0;
     cursor: pointer;
-    & button{
+    & button {
       font-size: 0;
       line-height: 0;
       display: block;
@@ -391,7 +389,7 @@ body.lock{
       outline: none;
       background: #22BF95;
       border-radius: 50%;
-      &::before{
+      &::before {
         position: absolute;
         top: -5px;
         left: -5px;
@@ -405,29 +403,29 @@ body.lock{
     }
   }
 }
-.my-dots li.slick-active button:before{
+.my-dots li.slick-active button:before {
   border: 1px solid #22BF95;
   border-radius: 50%;
   opacity: 1;
   color: #22BF95;
 }
-.slick-slide .slide-img{
+.slick-slide .slide-img {
   max-width: 262px;
   width: 100%;
   margin: 20px auto 0;
 }
-.planse{
+.planse {
   position: relative;
   margin-top: -255px;
-  &-title{
+  &-title {
     text-align: center;
   }
 }
-.planse-card-inner{
+.planse-card-inner {
   display: flex;
   padding-left: 13px;
 }
-.planse-card{
+.planse-card {
   position: relative;
   max-width: 260px;
   width: 100%;
@@ -438,7 +436,7 @@ body.lock{
   border-radius: 5px; 
   transition: transform 0.3s ease;
   transform: scaleY(1);
-  .card-title{
+  .card-title {
     color: $color-title-card;
     font-family: $font-title, sans-serif;
     font-size: 12px;
@@ -448,7 +446,7 @@ body.lock{
     letter-spacing: 2px;
     text-transform: uppercase;
   }
-  .btn-request{
+  .btn-request {
     max-width: 208px;
     width: 100%;
     font-size: 12px;
@@ -459,82 +457,82 @@ body.lock{
     color: $color-button;
     background: $button-bg-light;
     border: 1px solid #22BF95;
-    box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+    box-shadow: $button-box-shadow;
     border-radius: 20px;
     padding: 8px 0;      
   }
-  &-list{
+  &-list {
     margin-top: 30px;
   }
 }
-.slider-logo-single{
-  .slick-slide .single-img{
+.slider-logo-single {
+  .slick-slide .single-img {
     max-width: 235px;
     width: 100%;
     margin: 0 auto;
   }
-  .slick-disabled{
+  .slick-disabled {
     opacity: 0.5;
   }
 }
-.slider-logo-list{
+.slider-logo-list {
   margin-top: 40px;
-  .img-logo{
+  .img-logo {
     max-width: 51px;
     width: 100%;
   }
 }
-.slick-dots{
+.slick-dots {
   display: flex;
   width: 100%;
-  li{    
+  li {    
     flex: 1;
     background: #E5E5E5;
     height: 5px;
 
-    &.slick-active{
+    &.slick-active {
       background: #22bf95;
     }
-    button{
+    button {
       visibility: hidden;
     }
   }
 }
-.slider-logo{
+.slider-logo {
   padding: 100px 0; 
 }
-.description{
+.description {
   max-width: 315px;
   width: 100%;
-  &-text{
+  &-text {
     text-align: center;
   }
-  &-title{
+  &-title {
     margin-top: 26px;
     text-align: center;
   }
 }
-.services{
+.services {
   padding-bottom: 40px;
-  &-item-text{
+  &-item-text {
     padding: 0 20px;
   }
-  &-text{
+  &-text {
     margin-top: 20px;
     font-size: 13px;
     line-height: 24px;
   }
-  &-img{
+  &-img {
     margin: 30px auto 0;
   }
 }
-.get-more{
+.get-more {
   margin-top: -60px;
   padding: 19px 25px 30px;
   background-image: $img-bg-card;
   border-radius: 5px;
   filter: drop-shadow(0px 12px 24px #e5e5e5);
-  &-title{
+  &-title {
     padding-bottom: 5px;
     color: $color-get-more-title;
     font-family: $font-title, sans-serif;
@@ -544,21 +542,21 @@ body.lock{
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  &-link{
+  &-link {
     margin: 34px 0 0 0px;   
-    .get-link{
+    .get-link {
       color: $color-get-more-title;
       font-size: 16px;
       line-height: 24px;
     }
   }
-  .get-item{
+  .get-item {
     margin-top: 40px;
   }
 }
-.get-text{
+.get-text {
   position: relative;
-  &::after{
+  &::after {
     content: '';
     position: absolute;
     display: inline-block;
@@ -570,12 +568,12 @@ body.lock{
     border-radius: 50%;
   }
 }
-.card-item-wrapper{
+.card-item-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   padding: 9px 0 16px;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -584,17 +582,17 @@ body.lock{
     background: #f2f2f2;
   }
 }
-.card-item{
+.card-item {
   position: relative;
   margin-left: 20px;
   color: $color-description-text;
   font-size: 13px;
   line-height: 24px;
-  &-minus{
+  &-minus {
     color: #e5e5e5;
   }
 }
-.check-icon{
+.check-icon {
   position: relative;
   display: inline-block;
   width: 35px;
@@ -602,7 +600,7 @@ body.lock{
   background: transparent;
   border: 2px solid #22bf95;
   border-radius: 50%;
-  &::before{
+  &::before {
     content: "";
     width: 2px;
     background: #22bf95;
@@ -612,7 +610,7 @@ body.lock{
     transform: rotate(138deg);
     left: 9px;
   }
-  &::after{
+  &::after  {
     content: "";
     width: 2px;
     background: #22bf95;
@@ -623,7 +621,7 @@ body.lock{
     left: 18px;
   }
 }
-.minus-icon{
+.minus-icon {
   position: relative;
   display: inline-block;
   width: 35px;
@@ -631,7 +629,7 @@ body.lock{
   background: transparent;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
-  &::before{
+  &::before { 
     content: "";
     width: 18px;
     background: #e5e5e5;
@@ -641,7 +639,7 @@ body.lock{
     left: 8px;
   }
 }
-.arrow{
+.arrow {
   height: 13px;
   position: relative;
   width: 1px;
@@ -649,7 +647,7 @@ body.lock{
   margin: 4px 16px 0 100px;
   display: inline-block;
   border: 1px solid #fff;
-  &:before{
+  &:before {
     content: "";
     width: 2px;
     background: #fff;
@@ -659,7 +657,7 @@ body.lock{
     transform: rotate(50deg);
     left: -4px;
   }
-  &:after{
+  &:after {
     content: "";
     width: 2px;
     background: #fff;
@@ -670,10 +668,10 @@ body.lock{
     right: -4px;
   }
 }
-.right{
+.right {
   transform: rotate(90deg);
 }
-.footer{
+.footer {
   background-color: #f2f2f2;
   padding: 30px 0;
   &-item-inner{
@@ -685,17 +683,17 @@ body.lock{
     line-height: 36px;
     color: #7f7f7f;
   }
-  &-list{
+  &-list {
     max-width: 176px;
     width: 100%;
   }
 }
-.menu-footer-list{
+.menu-footer-list {
   padding-left: 23px;
-  & li + li{
+  & li + li {
     padding-top: 10px;
   }
-  .menu-link{
+  .menu-link {
     display: block;
     padding: 8px 0;
     color: #7f7f7f;
@@ -706,205 +704,203 @@ body.lock{
     text-transform: uppercase;
   }
 }
-.phone{
+.phone {
   margin-top: 4px;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 24px;
   color: #7f7f7f;
   transition: 1s;
-  &:hover{
+  &:hover {
     color: #22bf95;
   }
 }
-address{
+address {
   font-size: 12px;
   line-height: 20px;
   color: #7f7f7f;
 }
-.link-map{
+.link-map {
   font-family: "Aclonica-Regular", sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #22bf95;
   transition: 1s;
-  &:hover{
+  &:hover {
     color: #7f7f7f;
     text-decoration: underline;
   }
 }
-.social{
+.social {
   padding-bottom: 24px;
-  &-inner{
+  &-inner {
     border-top: 2px solid #b2b2b2;
   }
-  &-list{
+  &-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 29px 14px;
   }
 }
-svg .social-hover{
+svg .social-hover {
   transition: 200ms;
   transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
 }
-svg:hover .social-hover{
+svg:hover .social-hover {
   fill: #22bf95;
 }
-.footer-logo-img{
+.footer-logo-img {
   display: block;
   margin: 0 auto;
 }
-@include tablet{
-  .container{
+@include tablet {
+  .container {
     max-width: 767px;
     padding: 0 25px;
     margin: 0 auto;
   }
-  .hero{   
-    &-title{
+  .hero {   
+    &-title {
       max-width: 510px;
       padding: 120px 0 0;     
     }
-    &-text{
+    &-text {
       max-width: 510px;
       &::before{
         height: 90px;
       }
     }  
   }
-  .about{
-    &-items{
+  .about {
+    &-items {
       flex-direction: row;
       align-items: end;
     }
-    .about-img{
+    .about-img {
       max-width: 350px;
     }
-    &-item-right{
+    &-item-right {
       order: 2;
       margin-top: 90px;
       margin-left: 61px;
     }
-    &-item-left{
+    &-item-left {
       order: 1;
     }
   }
-  .essensials{
-    &-title{
+  .essensials {
+    &-title {
       max-width: 785px;
     }
-    &-cards{
+    &-cards {
       margin-top: 46px;
     }
   }
-  .essensials-card{
+  .essensials-card {
     display: flex;
     justify-content: center;
   }
-  .card{
+  .card {
     margin-top: 30px;
-    &-second{
+    &-second {
       margin-left: 30px;
     }
-    &-btn{
+    &-btn {
       max-width: 230px;
     }
   }
-  .slider{
-    .slide-title{
+  .slider {
+    .slide-title {
       max-width: 451px;
       margin: 20px auto 0;
       font-size: 18px;
     }
-    &-text{
+    &-text {
       max-width: 451px;
       margin: 20px auto 0;
       font-size: 18px;
     }
   }
-  .slick-slide img{
+  .slick-slide img {
     max-width: 470px;
     width: 100%;
     margin: 20px auto 0;
   }
-  .services-item-text{
+  .services-item-text {
     padding: 0 100px;
   }
-  .planse-card{
+  .planse-card {
     padding: 35px 5px 25px;
   }
-  .card-item-wrapper::before{
+  .card-item-wrapper::before {
     width: 140px;
   }
-  .card-item{
+  .card-item {
     font-size: 10px;
   }
-  .description{
+  .description {
     max-width: 700px;
   }
 }
-@include desktop{
-  .container{
+@include desktop {
+  .container {
     max-width: 1200px;
     width: 100%;
     padding: 0 84px;
   }
-  .btn{
+  .btn {
     max-width: 200px;
     width: 100%;
     font-size: 12px;
   }
-  .title{
+  .title {
     font-size: 42px;
     line-height: 54px;
   }
-  .text{
+  .text {
     font-size: 13px;
     line-height: 24px;
   }
-  .hamburger-menu{
+  .hamburger-menu {
     display: none;
   }
-  .header{   
-  .header-button{
+  .header {   
+  .header-button {
       flex-direction: row;
       max-width: 290px;
       margin: 0 0 0 30px;
       top: 0;
-      & .btn{
+      & .btn {
         color: #fff;
         border: 1px solid #fff;
       }
-      & .get-btn{
+      & .get-btn {
        margin-right: 20px;     
       }
-      & .log-btn{
+      & .log-btn {
         margin-top: 0;
       }
     }
   }
-  .header-menu{
+  .header-menu {
     flex: 1;
   }
-  .menu-body{
+  .menu-body {
     position: static;
     transform: translateY(0px);
     background: transparent;   
-    .menu-list{
+    .menu-list {
       position: relative;
       flex-direction: row;
       justify-content: flex-end;
       width: 100%;       
       padding-top: 0;
       align-items: center;
-      .menu-item{
+      .menu-item {
         position: relative;
         padding: 10px 10px;
-        .menu-link{
+        .menu-link {
           color: #fff;
           &::after {     
             background-color: #fff;
@@ -919,18 +915,18 @@ svg:hover .social-hover{
       }
     } 
   }  
-  .hero{
+  .hero {
     padding-bottom: 100px;
-    .container{
+    .container {
       padding: 0 200px;
     }
-    &-inner{
+    &-inner {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       margin-top: 120px;
     }
-    &-title{
+    &-title {
       font-size: 110px;
       line-height: 130px;
       letter-spacing: 2px;
@@ -938,71 +934,71 @@ svg:hover .social-hover{
       max-width: 1110px;
       padding-bottom: 0;
     }
-    &-text{
+    &-text {
       max-width: 670px;
       font-size: 20px;
       line-height: 26px;
       margin-top: 0;
-      &::before{
+      &::before {
          width: 2px;
          height: 105px;
       }
     } 
-    &-item{
-      &-btn{   
+    &-item {
+      &-btn {   
         max-width: 200px;
         width: 100%;
         margin: 0;  
-        .btn{
+        .btn {
           border: none;
         } 
       }
     } 
   }    
-  .header.sticky-header{
+  .header.sticky-header {
     & .menu-list .menu-link {
       position: relative;
       color: $color-sticky-link;
     }  
-    & .btn{
+    & .btn {
       color: $color-sticky-link;
       border: 1px solid #b2b2b2;
     }
   }
-  .planse-btn{
+  .planse-btn {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    .btn-request{
+    .btn-request {
       max-width: 219px;
     }
   }
-  .planse-card-inner{
+  .planse-card-inner {
     justify-content: space-between;
     padding: 0;
   }
-  .planse-card-plus{
+  .planse-card-plus {
     margin-right: 0;
   }
-  .planse-card:hover .card-item{
+  .planse-card:hover .card-item { 
       color: #fff;
   }
-  .planse-card:hover .check-icon{
+  .planse-card:hover .check-icon {
     border: 2px solid #fff;
     &::after,
-    &::before{
+    &::before {
       background: #fff;
     }
   }
-  .planse-card:hover .card-title{
+  .planse-card:hover .card-title {
     color: $color-title;
   }
-  .planse{
-    &-title{
+  .planse {
+    &-title {
       font-size: 42px;
       line-height: 54px;
     }
-    &-card-inner{
+    &-card-inner {
       max-width: 1440px;
       margin: 0 auto;
       padding-left: 0;
@@ -1010,81 +1006,74 @@ svg:hover .social-hover{
       justify-content: space-between;
       margin-top: 70px;
     }
-    &-card{
+    &-card {
       max-width: 286px;
       padding: 29px 34px 38px;
       margin-right: 0;
       background-color: #fff;
-      &-title{
+      &-title {
         font-size: 18px;
         line-height: 24px;
         letter-spacing: 2.25px;
       }
-      &:hover{
+      &:hover {
         background-image: $img-bg-card;
-        -o-transform: translateX(-20px) scaleY(1.1);
-        -ms-transform: translateX(-20px) scaleY(1.1);
-        -moz-transform: translateX(-20px) scaleY(1.1);
-        -webkit-transform: translateX(-20px) scaleY(1.1);
         transform: translateX(-20px) scaleY(1.1);
       } 
     }
-    .planse-card-list{
+    .planse-card-list {
       max-width: 219px;
       width: 100%;
       margin-top: 40px;
       padding-left: 0;
-      -o-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;       
-      & .card-item-wrapper{
+      & .card-item-wrapper {
         display: flex;
         align-items: center;
       }
     }
-    .card-item{
+    .card-item {
       font-size: 13px;
     }
-    .card-item-wrapper::before{
+    .card-item-wrapper::before {
       width: 218px;
     }
   }
-  .slider-logo-list .img-logo{
+  .slider-logo-list .img-logo {
     max-width: 120px;
   }
-  .services{
-    &-inner{
+  .services { 
+    &-inner {
       display: flex; 
       justify-content: space-between;
     } 
-    &-item-text{
+    &-item-text {
         max-width: 680px;
         width: 100%;
         margin-top: 50px;
         order: 1;
     } 
-    &-title{
+    &-title {
       font-size: 42px;
       line-height: 54px;
     }
-    &-text{
+    &-text {
       font-size: 16px;
     }
-    &-img{
+    &-img {
       max-width: 705px;
       width: 100%;
       margin-top: 0;
     }
   }
-  .get-more{
+  .get-more {
     display: flex;
     justify-content: space-between;
     max-width: 1030px;
     width: 100%;
     margin: -50px auto 0;
     padding: 30px 69px;
-    &-link{
+    &-link {
       display: flex;
       justify-content: space-between;
       margin: 34px 0 0 60px;
@@ -1097,140 +1086,140 @@ svg:hover .social-hover{
     max-width: 1033px;
   }
 }
-@include widescreen{
-  .container{
+@include widescreen {
+  .container {
     max-width: 1440px;
     width: 100%;
     padding: 0 100px;
   }
-  .header{
+  .header {
     padding: 0;
   }
-  .menu-body{
-    .menu-list{
+  .menu-body  {
+    .menu-list {
       padding: 10px 25px;
-      .menu-item{
+      .menu-item {
         padding: 10px 25px;
       }
     }
   } 
-  .about{
+  .about {
     position: relative;
     padding: 40px 0 80px;
     &-item-right{
       margin-left: 96px;
     }
-    .about-img{
+    .about-img {
       max-width: 600px;
     }
-    &-title{
+    &-title {
       font-size: 42px;
       line-height: 54px;
     }
-    &-text{
+    &-text {
       font-size: 16px;
       max-width: 470px;
     }
-    &-item-right{
+    &-item-right {
       margin-top: 148px;
     }   
   }
-  .about-btn{
+  .about-btn {
     position: absolute;
     left: 54%;
     bottom: 239px;
     flex-direction: row;
     max-width: 480px;  
-    & .btn-more{
+    & .btn-more {
       max-width: 200px;
       width: 100%;
       margin-right: 70px;
     }
-    & .btn-product{
+    & .btn-product {
       max-width: 200px;
       width: 100%;
     }
   }
-  .essensials{
+  .essensials {
     padding-top: 21px;
-    &-title{
+    &-title {
       max-width: 785px;
       font-size: 42px;
       line-height: 54px;
     }
   }
-  .card{
+  .card {
     max-width: 500px;
     width: 100%;
     margin-top: 35px;
     padding: 28px 15px 10px 42px;
-    &-title{
+    &-title {
       font-size: 24px;
       line-height: 36px;
     }
-    &-text{
+    &-text {
       max-width: 277px;
       font-size: 13px;
       line-height: 24px;
     }
-    &-icon{
+    &-icon {
       max-width: 90px;
       width: 100%;
       margin-left: 45px;
     }
-    & .info-icon{
+    & .info-icon {
       max-width: 22px;
       width: 100%;
     }  
   }
-  .btn-product{
+  .btn-product {
     margin-top: 73px;
   } 
-  .card-secondary{
-    & .card-info{
+  .card-secondary {
+    & .card-info {
       padding-top: 24px;
     }
   }
-  .solve{
+  .solve {
     padding: 120px 0 500px;
-    &-title{
+    &-title {
       font-size: 42px;
       line-height: 54px;
     }
-    &-btn{
+    &-btn {
       max-width: 181px;
       width: 100%;
       margin: 30px 0 0px 108px;
-      .get-btn{
+      .get-btn {
         margin: 0;
         max-width: 180px;
         width: 100%;
       }
     }
   }
-  .slider{
-    &-item{
+  .slider {
+    &-item {
       margin-top: 0;
     }
   }
-  .slick-slide .slide-img{
+  .slick-slide .slide-img {
     max-width: 350px;
     margin: 0;
     order: 2;
   }
-  .slick-initialized .slick-slide{
+  .slick-initialized .slick-slide {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  .slick-dots button{
+  .slick-dots button {
     margin-top: 10px;
   }
-  .my-dots{
+  .my-dots {
     flex-direction: column;
     align-items: flex-end;
     top: 16%;
-    & li{
+    & li {
       position: relative;
       display: inline-block;
       width: 24px;
@@ -1238,11 +1227,11 @@ svg:hover .social-hover{
       margin-top: 6px;
       padding: 0;
       cursor: pointer;
-      & button{
+      & button {
         width: 4px;
         height: 4px;
         padding: 4px;
-        &::before{
+        &::before {
           position: absolute;
           top: -8px;
           left: -8px;
@@ -1256,19 +1245,19 @@ svg:hover .social-hover{
       }
     }
   }
-  .planse-card{
+  .planse-card {
     max-width: 330px;
     padding: 42px 56px 38px;
   }
-  .slider-logo{
+  .slider-logo {
     padding: 145px 0;
-    .container{
+    .container {
       padding: 0 200px;
     }
   }
-  .description{  
+  .description {  
     max-width: 570px;
-    &-title{
+    &-title {
       margin: 20px 22px 0 0;
       color: $color-description-text;
       font-family: $font-title, sans-serif;
@@ -1278,106 +1267,106 @@ svg:hover .social-hover{
       text-align: right;
       text-transform: uppercase;
     }
-    &-text{
+    &-text {
       color: $color-description-text;
       font-size: 24px;
       line-height: 36px;
     }
   }
-  .services{
-    &-item-text{
+  .services {
+    &-item-text {
       max-width: 670px;
       margin-top: 110px;
     }
   }
-  .arrow{
+  .arrow {
     margin: 0 10px 0 110px;
   }
-  .footer{
+  .footer {
     padding: 100px 0;
-    .container{
+    .container {
       padding: 0 133px;
     }
-    &-inner{
+    &-inner {
       display: flex;
     }
-    &-item-inner{
+    &-item-inner {
       display: flex;
       border-top: 2px solid #22bf95;
       padding: 0;
-      .footer-list{
+      .footer-list {
         display: flex;
         padding: 9px 0 37px;
       }
     }
-    &-item-left{
+    &-item-left {
       margin-right: 100px;
     }
-    &-item-right{
+    &-item-right {
       flex: 0 0 77%;
     }
-    &-title{
+    &-title {
       font-size: 24px;
       line-height: 36px;
       flex: 0 0 300px;
     }
   }
-  .get-text::after{
+  .get-text::after {
     margin: -7px 0 0 98px;
   }
-  .footer-item-title{
+  .footer-item-title {
     flex: 0 0 300px;
   }
-  .item-phone{
+  .item-phone {
     flex: 0 0 170px;
     margin-left: 21px;
   }
-  .item-address{
+  .item-address {
     flex: 0 0 250px;
     margin-left: 30px;
   }
-  .item-link{
+  .item-link {
     flex: 0 0 100px;
     margin-left: 30px;
   }
-  .menu-footer-list{
+  .menu-footer-list {
     padding-left: 0; 
   }
-  .social{
+  .social {
     margin-top: 38px;
   }
-  .social-inner{
+  .social-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 29px;
   }
-  .social-list{
+  .social-list {
     padding: 0;
   }
-  .social-list li + li{
+  .social-list li + li {
     margin-left: 50px;
   }
-  .social .logo-image{
+  .social .logo-image {
     display: none;
     margin: 0;
   }
-  .item-second{
+  .item-second {
     margin: 7px 0 0 39px;
   }
-  .item-address{
+  .item-address {
     margin: 7px 0 0 50px;
   }
-  address{
+  address {
     font-size: 16px;
     line-height: 24px;
   }
-  .link-map{
+  .link-map {
     color: #22bf95;
     font-size: 16px;
     line-height: 24px;
   }
-  .footer-logo-img{
+  .footer-logo-img {
     margin: 0; 
     max-width: 168px;
     width: 100%;
