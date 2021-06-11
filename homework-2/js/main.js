@@ -27,13 +27,14 @@ $(document).ready(function(){
     autoplay: true,
     mobileFirst: true,
   });
-  $('.slider-logo-single').slick({
+  $('.slider-logo-single',).slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     asNavFor: '.slider-logo-list'
   });
+
   $('.slider-logo-list').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -41,7 +42,7 @@ $(document).ready(function(){
     dots: true,
     arrows: false,
     speed: 300,
-    autoplay: true,
+    //autoplay: true,
     focusOnSelect: true,
     mobileFirst: true,
     responsive: [
@@ -78,7 +79,9 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         infinite: false,
-        speed: 100,
+        speed: 300,
+        autoplay: true,
+        focusOnSelect: true,
         slidesToShow: 1,
         slidesToScroll: 1
       });

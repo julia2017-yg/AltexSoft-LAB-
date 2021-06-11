@@ -63,44 +63,44 @@ $bg-underline-link: #22bf95;
 %title-section-main{
   font-size: 42px;
   line-height: 54px;
-  color: #191919;
+  color: $color-text-primary;
 }
 %title-section-secondary{
   font-size: 24px;
   line-height: 36px;
-  color: #191919;
+  color: $color-text-primary;
 }
 %title-section-text-mobile{
   font-size: 13px;
   line-height: 24px;
-  color: #191919;
+  color: $color-text-primary;
 }
 %title-section-text{
   font-size: 16px;
   line-height: 24px;
-  color: #191919;
+  color: $color-text-primary;
 }
 %button-light{
-  background: #FFFFFF;
-  border: 1.5px solid #22BF95;
+  background: $bg-color-primary;
+  border: 1px solid $button-border-color;
   box-sizing: border-box;
-  box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+  box-shadow: $button-box-shadow;
   border-radius: 20px;
   font-size: 10px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 1.66667px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
-  color: #22BF95;
+  color: $color-button;
 }
 %button-dark{
-  background: #22BF95;
-  box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+  background: $button-bg-dark;
+  box-shadow: $button-box-shadow;
   border-radius: 20px;
   font-size: 10px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 1.66667px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $color-button-text-primary;
 }
