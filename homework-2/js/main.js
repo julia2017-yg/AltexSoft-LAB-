@@ -42,7 +42,7 @@ $(document).ready(function(){
     dots: true,
     arrows: false,
     speed: 300,
-    //autoplay: true,
+    autoplay: true,
     focusOnSelect: true,
     mobileFirst: true,
     responsive: [
