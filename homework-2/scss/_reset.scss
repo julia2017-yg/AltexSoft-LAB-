@@ -1,18 +1,15 @@
-html{
+html {
   box-sizing: border-box;
 }
-
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
-
 ul[class],
 ol[class] {
   padding: 0;
 }
-
 body,
 h1,
 h2,
@@ -49,8 +46,9 @@ select {
   font: inherit;
   border: none;
   background: transparent;
-  outline: none;
+  cursor: pointer;
 }
-a{
+a {
   text-decoration: none;
+  cursor: pointer;
 }

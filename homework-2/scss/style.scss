@@ -7,13 +7,13 @@
 body.lock {
   overflow: hidden;
 }
-.btn {
+.button {
   width: 100%;
   padding: 8px 0; 
   border-radius: $button-border-radius;
-  border: 1px solid $button-border-color;
-  color: $color-button;   
-  font-family: $font-links, sans-serif;
+  border: 1px solid $brandColor;
+  color: $brandColor;   
+  font-family: $font-links;
   font-size: 10px; 
   line-height: 24px;
   letter-spacing: 2px;
@@ -44,29 +44,29 @@ body.lock {
   .logo-link {
     position: relative;
     color: $color-text-header;
-    font-family: $font-hero-title, sans-serif;
+    font-family: $font-hero-title;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;  
     letter-spacing: 2px;
     text-transform: uppercase;      
   }  
-  .header-button {
+  .header-button-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 110px;
     max-width: 180px;
     width: 100%;
-    & .btn {
-      color: $color-button;
-      border: 1px solid $button-border-color;
+    .button {
+      color: $brandColor;
+      border: 1px solid $brandColor;
       width: 100%;
     }
-    & .get-btn {
+    & .get-button {
       margin-right: 0;
     }
-    & .log-btn {
+    & .log-button {
       max-width: 90px;
       margin-top: 16px;
     }
@@ -86,16 +86,16 @@ body.lock {
 .hamburger-menu {
   position: relative;
   display: block;
-  height: 18px;
-  width: 24px;
+  height: 44px;
+  width: 44px;
   cursor: pointer;
   &::before,
   &::after,
   & span {
     position: absolute;
     left: 0;
-    height: 10%;
-    width: 100%;
+    height: 2px;
+    width: 24px;
     background-color: $bg-color-primary;
     transition: all 0.3s ease 0s;
   }
@@ -104,10 +104,10 @@ body.lock {
     content: '';
   }
   &::before {
-    top: 0;
+    top: 13px;
   }
   &::after {
-    bottom: 0;
+    bottom: 13px;
   }
   & span {
     top: 50%;
@@ -125,7 +125,7 @@ body.lock {
     transform: rotate(45deg) translate(0px, 50%);
   }
 }
-.menu-body {
+.header-nav {
   position: absolute;
   top: 70px;
   left: 0;
@@ -134,7 +134,7 @@ body.lock {
   background-color: $bg-color-primary;
   transition: transform .5s ease-out;
   transform: translateY(-130%);
-  .menu-list {
+  .header-menu {
     position: relative;
     @extend %flex-primary;
     flex-direction: column;
@@ -152,8 +152,8 @@ body.lock {
     position: relative;
     display: inline-block;
     padding: 6px 0;
-    font-family: $font-links, sans-serif;
-    color: $color-link-header-mobile;
+    font-family: $font-links;
+    color: $brandColor;
     font-size: 12px;
     line-height: 24px;
     text-align: center;
@@ -171,7 +171,7 @@ body.lock {
     display: block;
     height: 2px;
     width: 0%;
-    background-color: $bg-underline-link;   
+    background-color: $brandColor;   
     transition: width 0.3s ease-in-out;
     transform: translateX(-50%);
   }
@@ -183,7 +183,7 @@ body.lock {
 .hero {
   position: relative;
   padding-bottom: 51px;
-  background-image: $img-bg-hero;
+  background-image: linear-gradient(60deg, #21c3d8 20%, #13d2c2 40%, #01f17d 75%);
   &-inner {
     @extend %flex-primary;
     flex-direction: column;
@@ -193,8 +193,8 @@ body.lock {
     max-width: 315px;
     margin: 0 auto;
     padding: 75px 0 62px;
-    color: $color-hero-title;
-    font-family: $font-hero-title, sans-serif;
+    color: #fff;
+    font-family: $font-hero-title;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 1px;
@@ -206,7 +206,7 @@ body.lock {
     max-width: 290px;
     width: 100%;
     margin-top: 31px;
-    color: $color-hero-text;
+    color: #fff;
     font-size: 13px;
     line-height: 24px;    
     text-shadow: $hero-text-shadow;   
@@ -221,7 +221,7 @@ body.lock {
        background-color: $bg-color-primary;
     }
   } 
-  &-item-btn {
+  .button-wrapper {
     max-width: 208px;
     width: 100%;
     margin: 0 auto;   
@@ -230,8 +230,9 @@ body.lock {
     max-width: 208px;
     background: $button-bg-light;
     box-shadow: $button-box-shadow;
-    font-size: $font-size-button;
-    color: $color-button; 
+    border: none;
+    font-size: 12px;
+    color: $brandColor; 
     margin-top: 30px;   
   } 
 }
@@ -255,18 +256,18 @@ body.lock {
     width: 100%;
     margin-top: 20px;
   }
-  &-btn {
+  &-button {
     display: flex;
     flex-direction: column;
     max-width: 209px;
     width: 100%;
     margin: 0 auto;   
-    & .btn-more {
+    & .button-more {
       @extend %button-light;
       margin-top: 30px;
       padding: 8px 0;
     }
-    & .btn-product {
+    & .button-product {
       @extend %button-dark;
       margin-top: 30px;
       padding: 8px 0;
@@ -286,14 +287,18 @@ body.lock {
   border-radius: 5px;
   margin-top: 10px; 
   padding: 30px 15px 10px 42px;
-  border-left: 5px solid #22BF95;
+  border-left: 5px solid $brandColor;
   &-inner {
     display: flex;
     align-items: center;
+    min-height: 150px;
   }
   &-info {
-    display: flex;
-    justify-content: flex-end;
+    background-image: url(../images/info-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0;
+    background-size: 19px;
+    height: 19px;
   }
   &-icon {
     width: 58px;
@@ -311,28 +316,28 @@ body.lock {
     margin-top: 22px;
   }
 }
-.card-btn {
+.card-button {
   display: flex;
   flex-direction: column;
   max-width: 209px;
   width: 100%;
   margin: 0 auto;
-  & .btn-product {
+  & .button-product {
     margin-top: 80px;
     color: $color-button-text-primary;
-    background-color: $button-bg-dark;
+    background-color: $brandColor;
   }
 }
 .solve {
   padding: 36px 0 350px;
-  background-image: $img-bg-slider-solve;
+  background-image: linear-gradient(160deg, rgba(230, 245, 240, 1) 5%, rgba(236, 231, 237, 1) 55%, rgba(225, 227, 239, 1) 75%);
   &-title {
     @extend %title-section-secondary;
   }
-  &-btn {
+  &-button {
     max-width: 208px;
     margin: 25px auto 0;
-    .get-btn{
+    .get-button{
       @extend %button-dark;
     }   
   }
@@ -343,7 +348,7 @@ body.lock {
     margin-top: 80px;
     .slide-title {
       margin-top: 15px;
-      font-family: $font-title, sans-serif;
+      font-family: $font-title, ;
       font-size: 12px;
       line-height: 24px;
       letter-spacing: 2px;
@@ -387,7 +392,7 @@ body.lock {
       color: transparent;
       border: 0;
       outline: none;
-      background: #22BF95;
+      background: $brandColor;
       border-radius: 50%;
       &::before {
         position: absolute;
@@ -398,34 +403,34 @@ body.lock {
         content: '';
         text-align: center;
         opacity: 1;
-        color: #22BF95;
+        color: $brandColor;
       }
     }
   }
 }
 .my-dots li.slick-active button:before {
-  border: 1px solid #22BF95;
+  border: 1px solid $brandColor;
   border-radius: 50%;
   opacity: 1;
-  color: #22BF95;
+  color: $brandColor;
 }
 .slick-slide .slide-img {
   max-width: 262px;
   width: 100%;
   margin: 20px auto 0;
 }
-.planse {
+.plans {
   position: relative;
   margin-top: -255px;
   &-title {
     text-align: center;
   }
 }
-.planse-card-inner {
+.plans-card-inner {
   display: flex;
   padding-left: 13px;
 }
-.planse-card {
+.plans-card {
   position: relative;
   max-width: 260px;
   width: 100%;
@@ -437,8 +442,8 @@ body.lock {
   transition: transform 0.3s ease;
   transform: scaleY(1);
   .card-title {
-    color: $color-title-card;
-    font-family: $font-title, sans-serif;
+    color: $brandColor;
+    font-family: $font-title, ;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 2px;
@@ -446,7 +451,7 @@ body.lock {
     letter-spacing: 2px;
     text-transform: uppercase;
   }
-  .btn-request {
+  .button-request {
     max-width: 208px;
     width: 100%;
     font-size: 12px;
@@ -454,9 +459,9 @@ body.lock {
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: $color-button;
+    color: $brandColor;
     background: $button-bg-light;
-    border: 1px solid #22BF95;
+    border: 1px solid $brandColor;
     box-shadow: $button-box-shadow;
     border-radius: 20px;
     padding: 8px 0;      
@@ -491,7 +496,7 @@ body.lock {
     height: 5px;
 
     &.slick-active {
-      background: #22bf95;
+      background: $brandColor;
     }
     button {
       visibility: hidden;
@@ -501,7 +506,7 @@ body.lock {
 .slider-logo {
   padding: 100px 0; 
 }
-.description {
+.slider-logo-description {
   max-width: 315px;
   width: 100%;
   &-text {
@@ -535,7 +540,7 @@ body.lock {
   &-title {
     padding-bottom: 5px;
     color: $color-get-more-title;
-    font-family: $font-title, sans-serif;
+    font-family: $font-title;
     font-size: 10px;
     line-height: 24px;
     letter-spacing: 1.6px;
@@ -598,12 +603,12 @@ body.lock {
   width: 35px;
   height: 35px;
   background: transparent;
-  border: 2px solid #22bf95;
+  border: 2px solid $brandColor;
   border-radius: 50%;
   &::before {
     content: "";
     width: 2px;
-    background: #22bf95;
+    background: $brandColor;
     height: 9px;
     position: absolute;
     top: 14px;
@@ -613,7 +618,7 @@ body.lock {
   &::after  {
     content: "";
     width: 2px;
-    background: #22bf95;
+    background: $brandColor;
     height: 18px;
     position: absolute;
     top: 7px;
@@ -636,7 +641,7 @@ body.lock {
     height: 2px;
     position: absolute;
     top: 14px;
-    left: 8px;
+    left: 7px;
   }
 }
 .arrow {
@@ -667,16 +672,16 @@ body.lock {
     transform: rotate(-50deg);
     right: -4px;
   }
-}
-.right {
-  transform: rotate(90deg);
+  &.right {
+    transform: rotate(90deg);
+  }
 }
 .footer {
   background-color: #f2f2f2;
   padding: 30px 0;
-  &-item-inner{
+  &-item-inner {
     padding: 8px 0 8px 0;
-    border-top: 2px solid #22bf95;
+    border-top: 2px solid $brandColor;
   }
   &-title {
     font-size: 16px;
@@ -697,7 +702,7 @@ body.lock {
     display: block;
     padding: 8px 0;
     color: #7f7f7f;
-    font-family: "Acme-Regular", sans-serif;
+    font-family: $font-links;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 2px;
@@ -712,19 +717,19 @@ body.lock {
   color: #7f7f7f;
   transition: 1s;
   &:hover {
-    color: #22bf95;
+    color: $brandColor;
   }
 }
-address {
+.address {
   font-size: 12px;
   line-height: 20px;
   color: #7f7f7f;
 }
 .link-map {
-  font-family: "Aclonica-Regular", sans-serif;
+  font-family: $font-primary;
   font-size: 12px;
   line-height: 20px;
-  color: #22bf95;
+  color: $brandColor;
   transition: 1s;
   &:hover {
     color: #7f7f7f;
@@ -743,12 +748,12 @@ address {
     margin: 29px 14px;
   }
 }
-svg .social-hover {
+.social-footer-link .social-hover {
   transition: 200ms;
   transition-timing-function: ease-in-out;
 }
-svg:hover .social-hover {
-  fill: #22bf95;
+.social-footer-link:hover .social-hover {
+  fill: $brandColor;
 }
 .footer-logo-img {
   display: block;
@@ -767,7 +772,7 @@ svg:hover .social-hover {
     }
     &-text {
       max-width: 510px;
-      &::before{
+      &::before {
         height: 90px;
       }
     }  
@@ -795,18 +800,17 @@ svg:hover .social-hover {
     }
     &-cards {
       margin-top: 46px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
     }
-  }
-  .essensials-card {
-    display: flex;
-    justify-content: center;
   }
   .card {
     margin-top: 30px;
     &-second {
       margin-left: 30px;
     }
-    &-btn {
+    &-button {
       max-width: 230px;
     }
   }
@@ -830,7 +834,7 @@ svg:hover .social-hover {
   .services-item-text {
     padding: 0 100px;
   }
-  .planse-card {
+  .plans-card {
     padding: 35px 5px 25px;
   }
   .card-item-wrapper::before {
@@ -839,7 +843,7 @@ svg:hover .social-hover {
   .card-item {
     font-size: 10px;
   }
-  .description {
+  .slider-logo-description {
     max-width: 700px;
   }
 }
@@ -849,7 +853,7 @@ svg:hover .social-hover {
     width: 100%;
     padding: 0 84px;
   }
-  .btn {
+  .button {
     max-width: 200px;
     width: 100%;
     font-size: 12px;
@@ -866,19 +870,19 @@ svg:hover .social-hover {
     display: none;
   }
   .header {   
-  .header-button {
+  .header-button-wrapper {
       flex-direction: row;
       max-width: 290px;
       margin: 0 0 0 30px;
       top: 0;
-      & .btn {
+      & .button {
         color: #fff;
         border: 1px solid #fff;
       }
-      & .get-btn {
+      & .get-button {
        margin-right: 20px;     
       }
-      & .log-btn {
+      & .log-button {
         margin-top: 0;
       }
     }
@@ -886,34 +890,34 @@ svg:hover .social-hover {
   .header-menu {
     flex: 1;
   }
-  .menu-body {
+  .header-nav {
     position: static;
     transform: translateY(0px);
     background: transparent;   
-    .menu-list {
+    .header-menu {
       position: relative;
       flex-direction: row;
       justify-content: flex-end;
       width: 100%;       
       padding-top: 0;
-      align-items: center;
-      .menu-item {
-        position: relative;
-        padding: 10px 10px;
-        .menu-link {
-          color: #fff;
-          &::after {     
-            background-color: #fff;
-          }
-          &.active{
-            transform: translateY(0px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
+      align-items: center;    
+    } 
+    .menu-item {
+      position: relative;
+      padding: 10px 10px;
+      .menu-link {
+        color: #fff;
+        &::after {     
+          background-color: #fff;
+        }
+        &.active {
+          transform: translateY(0px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
-    } 
+    }
   }  
   .hero {
     padding-bottom: 100px;
@@ -944,56 +948,95 @@ svg:hover .social-hover {
          height: 105px;
       }
     } 
-    &-item {
-      &-btn {   
-        max-width: 200px;
-        width: 100%;
-        margin: 0;  
-        .btn {
-          border: none;
-        } 
-      }
-    } 
+    .button-wrapper {   
+      max-width: 200px;
+      width: 100%;
+      margin: 0;  
+      .button {
+        border: none;
+      } 
+    }
   }    
   .header.sticky-header {
-    & .menu-list .menu-link {
+    & .header-menu .menu-link {
       position: relative;
       color: $color-sticky-link;
     }  
-    & .btn {
+    & .button {
       color: $color-sticky-link;
       border: 1px solid #b2b2b2;
     }
   }
-  .planse-btn {
+  .about {
+    position: relative;
+    padding: 40px 0 80px;
+    .container{
+      max-width: 1170px;
+      padding: 0;
+    }
+    &-item-right{
+      margin-left: 96px;
+    }
+    .about-img {
+      max-width: 600px;
+    }
+    &-title {
+      font-size: 42px;
+      line-height: 54px;
+    }
+    &-text {
+      font-size: 16px;
+      max-width: 470px;
+    }
+    &-item-right {
+      margin-top: 148px;
+    }   
+  }
+  .about-button {
+    position: relative;
+    left: 30%;
+    bottom: 239px;
+    flex-direction: row;
+    max-width: 480px;  
+    & .button-more {
+      max-width: 200px;
+      width: 100%;
+      margin-right: 70px;
+    }
+    & .button-product {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+  .plans-button {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    .btn-request {
+    .button-request {
       max-width: 219px;
     }
   }
-  .planse-card-inner {
+  .plans-card-inner {
     justify-content: space-between;
     padding: 0;
   }
-  .planse-card-plus {
+  .plans-card-plus {
     margin-right: 0;
   }
-  .planse-card:hover .card-item { 
+  .plans-card:hover .card-item { 
       color: #fff;
   }
-  .planse-card:hover .check-icon {
+  .plans-card:hover .check-icon {
     border: 2px solid #fff;
     &::after,
     &::before {
       background: #fff;
     }
   }
-  .planse-card:hover .card-title {
+  .plans-card:hover .card-title {
     color: $color-title;
   }
-  .planse {
+  .plans {
     &-title {
       font-size: 42px;
       line-height: 54px;
@@ -1021,7 +1064,7 @@ svg:hover .social-hover {
         transform: translateX(-20px) scaleY(1.1);
       } 
     }
-    .planse-card-list {
+    .plans-card-list {
       max-width: 219px;
       width: 100%;
       margin-top: 40px;
@@ -1082,7 +1125,7 @@ svg:hover .social-hover {
       margin-top: 0; 
     }
   }
-  .description {
+  .slider-logo-description {
     max-width: 1033px;
   }
 }
@@ -1095,51 +1138,14 @@ svg:hover .social-hover {
   .header {
     padding: 0;
   }
-  .menu-body  {
-    .menu-list {
+  .header-nav  {
+    .header-menu {
       padding: 10px 25px;
       .menu-item {
         padding: 10px 25px;
       }
     }
   } 
-  .about {
-    position: relative;
-    padding: 40px 0 80px;
-    &-item-right{
-      margin-left: 96px;
-    }
-    .about-img {
-      max-width: 600px;
-    }
-    &-title {
-      font-size: 42px;
-      line-height: 54px;
-    }
-    &-text {
-      font-size: 16px;
-      max-width: 470px;
-    }
-    &-item-right {
-      margin-top: 148px;
-    }   
-  }
-  .about-btn {
-    position: absolute;
-    left: 54%;
-    bottom: 239px;
-    flex-direction: row;
-    max-width: 480px;  
-    & .btn-more {
-      max-width: 200px;
-      width: 100%;
-      margin-right: 70px;
-    }
-    & .btn-product {
-      max-width: 200px;
-      width: 100%;
-    }
-  }
   .essensials {
     padding-top: 21px;
     &-title {
@@ -1165,14 +1171,14 @@ svg:hover .social-hover {
     &-icon {
       max-width: 90px;
       width: 100%;
-      margin-left: 45px;
+      margin-left: 25px;
     }
     & .info-icon {
       max-width: 22px;
       width: 100%;
     }  
   }
-  .btn-product {
+  .button-product {
     margin-top: 73px;
   } 
   .card-secondary {
@@ -1186,11 +1192,11 @@ svg:hover .social-hover {
       font-size: 42px;
       line-height: 54px;
     }
-    &-btn {
+    &-button {
       max-width: 181px;
       width: 100%;
       margin: 30px 0 0px 108px;
-      .get-btn {
+      .get-button {
         margin: 0;
         max-width: 180px;
         width: 100%;
@@ -1240,12 +1246,12 @@ svg:hover .social-hover {
           content: '';
           text-align: center;
           opacity: 1;
-          color: #22BF95;
+          color: $brandColor;
         }
       }
     }
   }
-  .planse-card {
+  .plans-card {
     max-width: 330px;
     padding: 42px 56px 38px;
   }
@@ -1255,12 +1261,12 @@ svg:hover .social-hover {
       padding: 0 200px;
     }
   }
-  .description {  
+  .slider-logo-description {  
     max-width: 570px;
     &-title {
       margin: 20px 22px 0 0;
       color: $color-description-text;
-      font-family: $font-title, sans-serif;
+      font-family: $font-title;
       font-size: 12px;
       line-height: 24px;
       letter-spacing: 2px;
@@ -1292,7 +1298,7 @@ svg:hover .social-hover {
     }
     &-item-inner {
       display: flex;
-      border-top: 2px solid #22bf95;
+      border-top: 2px solid $brandColor;
       padding: 0;
       .footer-list {
         display: flex;
@@ -1357,12 +1363,12 @@ svg:hover .social-hover {
   .item-address {
     margin: 7px 0 0 50px;
   }
-  address {
+  .address {
     font-size: 16px;
     line-height: 24px;
   }
   .link-map {
-    color: #22bf95;
+    color: $brandColor;
     font-size: 16px;
     line-height: 24px;
   }
