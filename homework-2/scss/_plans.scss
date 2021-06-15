@@ -1,0 +1,208 @@
+@import 'vars';
+@import 'mixins';
+
+.plans {
+  position: relative;
+  margin-top: -255px;
+  &-title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    @include desktop {
+      font-size: 42px;
+      line-height: 54px;
+    }
+  }
+  @include desktop {
+    margin-top: -350px;
+  }
+}
+.plans-card-inner {
+  display: flex;
+  padding-left: 13px;
+  @include desktop {
+    max-width: 1440px;
+    justify-content: space-between;
+    padding: 0; 
+    margin: 70px auto 0;
+  }
+}
+.plans-card {
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+  margin: 30px 13px 0 0;
+  padding: 35px 23px 53px;
+  background: #FFFFFF;
+  box-shadow: $button-box-shadow;
+  border-radius: 5px; 
+  transition: transform 0.3s ease;
+  transform: scaleY(1);
+  &:hover {
+    @include desktop {
+      background-image: $img-bg-card;
+      transform: translateX(-20px) scaleY(1.1);
+    }
+  }
+  @include tablet {
+    padding: 35px 5px 25px;
+  }
+  @include desktop {
+    max-width: 286px;
+    padding: 29px 34px 38px;
+    margin-right: 0;
+    background-color: #fff;
+  }
+  @include widescreen {
+    max-width: 330px;
+    padding: 42px 56px 38px;
+  }
+  .card-title {
+    color: $brandColor;
+    font-family: $font-title, ;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include desktop {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 2.25px;
+    }
+  }
+  .button-request {
+    max-width: 208px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $brandColor;
+    background: $button-bg-light;
+    border: 1px solid $brandColor;
+    box-shadow: $button-box-shadow;
+    border-radius: 20px;
+    padding: 8px 0;  
+    @include desktop {
+      max-width: 219px;
+    }    
+  }
+  &-list {
+    margin-top: 30px;
+    @include desktop {
+      max-width: 219px;
+      width: 100%;
+      margin-top: 40px;
+      padding-left: 0;
+      transition: all 0.5s ease-in-out;    
+    }
+  }
+}
+.card-item-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 9px 0 16px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 218px;
+    height: 2px;
+    background: #f2f2f2;
+    @include tablet {
+      width: 140px;
+    }
+    @include desktop {
+      width: 218px;
+    }
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;  
+  }
+}
+.card-item {
+  position: relative;
+  margin-left: 20px;
+  color: $color-description-text;
+  font-size: 13px;
+  line-height: 24px;
+  @include tablet {
+    font-size: 10px;
+  }
+  &-minus {
+    color: #e5e5e5;
+  }
+  @include desktop {
+    font-size: 13px;
+  }
+}
+.check-icon {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid $brandColor;
+  border-radius: 50%;
+  &::before {
+    content: "";
+    width: 2px;
+    background: $brandColor;
+    height: 9px;
+    position: absolute;
+    top: 14px;
+    transform: rotate(138deg);
+    left: 9px;
+  }
+  &::after  {
+    content: "";
+    width: 2px;
+    background: $brandColor;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    transform: rotate(-138deg);
+    left: 18px;
+  }
+}
+.minus-icon {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  &::before { 
+    content: "";
+    width: 18px;
+    background: #e5e5e5;
+    height: 2px;
+    position: absolute;
+    top: 14px;
+    left: 7px;
+  }
+}
+@include desktop {
+  .plans-card-plus {
+    margin-right: 0;
+  }
+  .plans-card:hover .card-item { 
+      color: #fff;
+  }
+  .plans-card:hover .check-icon {
+    border: 2px solid #fff;
+    &::after,
+    &::before {
+      background: #fff;
+    }
+  }
+  .plans-card:hover .card-title {
+    color: $color-title;
+  }  
+}

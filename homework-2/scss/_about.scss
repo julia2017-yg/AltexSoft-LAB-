@@ -1,0 +1,103 @@
+@import 'vars';
+@import 'mixins';
+
+.about {
+  padding: 60px 0 80px;
+  .container {
+    @include desktop {
+      max-width: 1170px;
+      padding: 0;
+    }
+  }
+  &-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      align-items: end;
+    }
+    @include desktop {
+      align-items: flex-start;
+    }
+  }
+  &-img {
+    max-width: 270px;
+    width: 100%;
+    margin: 20px auto 0;
+    @include tablet {
+      max-width: 350px;
+    }
+    @include desktop {
+      max-width: 600px;
+    }
+  }
+  &-title {
+    @extend %title-section-secondary;
+    @include desktop {
+      font-size: 42px;
+      line-height: 54px;
+    }
+  }
+  &-text {
+    @extend %title-section-text-mobile;
+    max-width: 309px;
+    width: 100%;
+    margin-top: 20px;
+    @include desktop {
+      font-size: 16px;
+      max-width: 402px;
+    }
+  }
+  &-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 209px;
+    width: 100%;
+    margin: 0 auto;   
+    & .button-more {
+      @extend %button-light;
+      margin-top: 30px;
+      padding: 8px 0;
+      @include desktop {
+        max-width: 200px;
+        width: 100%;
+        margin-right: 70px;
+      }
+    }
+    & .button-product {
+      @extend %button-dark;
+      margin-top: 30px;
+      padding: 8px 0;
+      @include desktop {
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+    @include desktop {
+      position: relative;
+      left: 30%;
+      bottom: 239px;
+      flex-direction: row;
+      max-width: 480px;  
+    }
+  } 
+  &-item-right {
+    @include tablet {
+      order: 2;
+      margin: 90px 0 0 61px;
+    }  
+    @include desktop {
+      margin: 148px 0 0 96px;
+    }    
+  }
+  &-item-left {
+    @include tablet {
+      order: 1;
+    }     
+  }    
+  @include desktop {
+    position: relative;
+    padding: 40px 0 80px;    
+  }
+}
