@@ -1,9 +1,9 @@
 'use strict';
  
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var watch = require('gulp-watch');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const watch = require('gulp-watch');
  
 // sass.compiler = require('node-sass');
  
