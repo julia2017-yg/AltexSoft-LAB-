@@ -24,9 +24,11 @@
 }
 .slider-logo-list {
   margin-top: 40px;
-  .img-logo {    
+  .img-logo { 
+    max-width: 70px;   
     width: 100%;
     margin: auto;
+    padding-bottom: 15px;
     @include desktop {
       max-width: 120px;
     }
@@ -38,8 +40,6 @@
 .slider-logo-list .slick-slide.slick-current.slick-active {
   border-bottom: 5px solid $brandColor;
   border-radius: 2px;
-  max-width: 120px;
-  width: 100%;
 }
 .slider-logo-description {
   max-width: 315px;
@@ -53,26 +53,29 @@
   @include widescreen {
     max-width: 570px;
   }
-  &-text {
-    text-align: center;
-    @include widescreen {
-      color: $color-description-text;
-      font-size: 24px;
-      line-height: 36px;
-    }
+}
+.description-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-description-text;
+  text-align: center;
+  @include widescreen {    
+    font-size: 24px;
+    line-height: 36px;
   }
-  &-title {
-    margin-top: 26px;
-    text-align: center;
-    @include widescreen {
-      margin: 20px 22px 0 0;
-      color: $color-description-text;
-      font-family: $font-title;
-      font-size: 12px;
-      line-height: 24px;
-      letter-spacing: 2px;
-      text-align: right;
-      text-transform: uppercase;
-    }
+}
+.description-title {
+  margin-top: 26px;
+  font-size: 10px;
+  font-family: $font-title;
+  color: $color-description-text;
+  text-align: center;
+  @include widescreen {
+    margin: 20px 22px 0 0;   
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: right;
+    text-transform: uppercase;
   }
 }

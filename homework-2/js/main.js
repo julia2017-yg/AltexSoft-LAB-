@@ -43,7 +43,6 @@ $(document).ready(function(){
     autoplay: true,
     focusOnSelect: true,
     mobileFirst: true,
-    variableWidth: true,
     responsive: [
       {
         breakpoint: 767,
