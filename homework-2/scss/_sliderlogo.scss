@@ -44,6 +44,7 @@
 .slider-logo-description {
   max-width: 315px;
   width: 100%;
+  margin: 0 auto;
   @include tablet {
     max-width: 700px;
   }
