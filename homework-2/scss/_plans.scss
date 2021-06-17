@@ -18,8 +18,7 @@
   }
 }
 .plans-card-inner {
-  padding-left: 13px;
-  padding-right: 13px;
+  padding: 0 13px;
   @include tablet {
     display: flex;
     padding: 0;
