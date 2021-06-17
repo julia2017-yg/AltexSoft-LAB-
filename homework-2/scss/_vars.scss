@@ -66,6 +66,7 @@ $bg-color-primary: #fff;
   color: $brandColor;
 }
 %button-dark {
+  width: 100%;
   background: $brandColor;
   box-shadow: $button-box-shadow;
   border-radius: 20px;

@@ -18,18 +18,24 @@
   }
 }
 .plans-card-inner {
-  display: flex;
   padding-left: 13px;
+  padding-right: 13px;
+  @include tablet {
+    display: flex;
+    padding: 0;
+  }
   @include desktop {
     max-width: 1440px;
     justify-content: space-between;
     padding: 0; 
     margin: 70px auto 0;
   }
+  .slick-list {
+    padding: 0 50px 20px 0;
+  }
 }
 .plans-card {
   position: relative;
-  max-width: 260px;
   width: 100%;
   margin: 30px 13px 0 0;
   padding: 35px 23px 53px;
@@ -72,9 +78,12 @@
       letter-spacing: 2.25px;
     }
   }
+  .plans-button {
+    text-align: center;
+  }
   .button-request {
-    max-width: 208px;
-    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
     font-size: 12px;
     line-height: 24px;
     text-align: center;
@@ -85,10 +94,13 @@
     border: 1px solid $brandColor;
     box-shadow: $button-box-shadow;
     border-radius: 20px;
-    padding: 8px 0;  
+    padding: 8px 50px;  
+    @include tablet {
+      padding: 8px 6px;
+    }
     @include desktop {
-      max-width: 219px;
-    }    
+      padding: 8px 35px;
+    }
   }
   &-list {
     margin-top: 30px;
@@ -110,12 +122,9 @@
     content: "";
     position: absolute;
     top: 0;
-    width: 218px;
+    width: 100%;
     height: 2px;
     background: #f2f2f2;
-    @include tablet {
-      width: 140px;
-    }
     @include desktop {
       width: 218px;
     }
@@ -188,10 +197,12 @@
     left: 7px;
   }
 }
-@include desktop {
-  .plans-card-plus {
+.plans-card-plus {
+  @include tablet {
     margin-right: 0;
   }
+}
+@include desktop {
   .plans-card:hover .card-item { 
       color: #fff;
   }

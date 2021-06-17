@@ -66,7 +66,7 @@ $(document).ready(function(){
       $('.plans-card-inner:not(.slick-initialized)').slick({
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         speed: 300,
         autoplay: true,
         focusOnSelect: true,
