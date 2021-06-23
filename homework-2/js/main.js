@@ -1,19 +1,19 @@
 const iconMenu = document.querySelector('.hamburger-menu');
-  if(iconMenu) {
+  if (iconMenu) {   
     const headerNav = document.querySelector('.header-nav');
-    iconMenu.addEventListener('click', function(e){
+    iconMenu.addEventListener('click', () => {
       document.body.classList.toggle('lock');
       iconMenu.classList.toggle('active');
       headerNav.classList.toggle('active');
     });
   }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('sticky-header', window.scrollY > 0);
 });
 
-$(document).ready(function(){ 
+$(document).ready(function () { 
   $('.slider_inner').slick({
     dots: true,
     dotsClass: 'my-dots',
@@ -22,8 +22,7 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
-    mobileFirst: true,
+    autoplay: true
   });
   $('.slider-logo-single',).slick({
     slidesToShow: 1,
@@ -61,7 +60,7 @@ $(document).ready(function(){
     ]
   });
   
-  $(window).on('load resize', function() {
+  $(window).on('load resize', function () {
     if (window.matchMedia("(max-width: 767px)").matches) {
       $('.plans-card-inner:not(.slick-initialized)').slick({
         dots: false,
