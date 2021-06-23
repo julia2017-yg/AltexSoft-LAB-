@@ -9,7 +9,7 @@ const iconMenu = document.querySelector('.hamburger-menu');
   }
 
 window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
+    const header = document.querySelector('header');
     header.classList.toggle('sticky-header', window.scrollY > 0);
 });
 
