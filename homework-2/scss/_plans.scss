@@ -172,9 +172,6 @@
   background: transparent;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
-  &:hover {
-    padding: 14px 15px;
-  }
   &::before { 
     content: "";
     width: 18px;
@@ -194,7 +191,8 @@
   .plans-card:hover .card-item { 
       color: #fff;
   }
-  .plans-card:hover .check-icon {
+  .plans-card:hover .check-icon,
+  .plans-card:hover .minus-icon {
     border: 2px solid #fff;
     padding: 14px 15px;
     &::after,
