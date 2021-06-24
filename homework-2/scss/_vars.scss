@@ -1,9 +1,7 @@
 //FONTS
-$font-primary: 'Aclonica-Regular', Arial, sans-serif;
-$font-hero-title: 'Actor-Regular', Arial, sans-serif;
-$font-links: 'Acme-Regular', Arial, sans-serif;
-$font-button: 'Acme-Regular', Arial, sans-serif;
-$font-title: 'Acme-Regular', Arial, sans-serif;
+$font-links: 'Acme', sans-serif;
+$font-button: 'Acme', sans-serif;;
+$font-title: 'Acme', sans-serif;
 
 //FONTS
 
@@ -42,11 +40,6 @@ $bg-color-primary: #fff;
 //OTHERS
 
 //extends
-%title-section-secondary {
-  font-size: 24px;
-  line-height: 36px;
-  color: $color-text-primary;
-}
 %title-section-text-mobile {
   font-size: 13px;
   line-height: 24px;

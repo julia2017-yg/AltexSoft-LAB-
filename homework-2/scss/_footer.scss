@@ -114,7 +114,6 @@
   }
 }
 .link-map {
-  font-family: $font-primary;
   font-size: 12px;
   line-height: 20px;
   color: $brandColor;
@@ -158,18 +157,45 @@
     margin-top: 38px;
   }
 }
-.social-footer-link .social-hover {
+.social-footer-link {
+  width: 29px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
   transition: 200ms;
   transition-timing-function: ease-in-out;
-}
-.social-footer-link:hover .social-hover {
-  fill: $brandColor;
+  &-tweeter {
+    background-image: url(../images/tweeter.svg);   
+    &:hover {
+      background-image: url(../images/tweeter-hover.svg);
+    }
+  }
+  &-facebook {
+    background-image: url(../images/facebook.svg);
+    width: 25px;
+    height: 25px;
+    &:hover {
+      background-image: url(../images/facebook-hover.svg);
+    }
+  }
+  &-youtube {
+    background-image: url(../images/youtube.svg);
+    width: 32px;
+    height: 23px;
+    &:hover {
+      background-image: url(../images/youtube-hover.svg);
+    }
+  }
+  &-linkedin {
+    background-image: url(../images/linkedin.svg);
+    width: 25px;
+    height: 25px;
+    &:hover {
+      background-image: url(../images/linkedin-hover.svg);
+    }
+  }
 }
 .footer-logo-img {
   margin: 0 auto;
-  @include widescreen {
-    margin: 0; 
-    max-width: 168px;
-    width: 100%;
-  }
 }

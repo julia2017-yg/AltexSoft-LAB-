@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scout</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Actor&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,7 +27,7 @@
           <nav class="header-nav">
             <ul class="header-menu">
               <li class="menu-item">
-                <a class="menu-link first-link" href="#">Why Skout</a>
+                <a class="menu-link" href="#">Why Skout</a>
               </li>
               <li class="menu-item">
                 <a class="menu-link" href="#">Products</a>
@@ -40,12 +43,12 @@
               </li>
               <li class="menu-item">
                 <a class="menu-link" href="#">Blog</a>
-              </li>
-              <div class="header-button-wrapper">
-                <button class="get-button button" type="button">Get Skout</button>
-                <button class="log-button button" type="button">Log In</button>
-              </div>
+              </li>            
             </ul>
+            <div class="header-button-wrapper">
+              <button class="get-button button" type="button">Get Skout</button>
+              <button class="log-button button" type="button">Log In</button>
+            </div>
           </nav>
         </div>
       </div>
@@ -58,13 +61,11 @@
       <div class="container">
         <h1 class="hero-title">Find trouble before trouble finds you.</h1>
         <div class="hero-inner">
-          <div class="hero-item">
             <p class="hero-text">
               SKOUT is a cybersecurity company that delivers total protection for total peace of mind.
               Whether you’re an international conglomerate or a mom-and-pop shop we make cybersecurity
               easy and accessible because we believe security is universal and peace of mind is worth protecting.
             </p>
-          </div>
           <div class="button-wrapper">
             <button class="hero-button button" type="button">Why SKOUT</button>
           </div>
@@ -76,7 +77,7 @@
         <div class="about-inner">
           <div class="about-items">
             <div class="about-item about-item-right">
-              <h3 class="about-title">What is SKOUT?</h3>
+              <h3 class="title">What is SKOUT?</h3>
               <p class="about-text">
                 A cybersecurity platform that offers world-class protection,
                 monitoring everything from emails to endpoints.
@@ -98,7 +99,7 @@
     <section class="essensials">
       <div class="container">
         <div class="essensials-inner">
-          <h3 class="essensials-title title">Cybersecurity Essentials</h3>
+          <h3 class="title">Cybersecurity Essentials</h3>
           <div class="essensials-cards">
             <div class="card">
               <div class="card-inner">
@@ -157,7 +158,7 @@
     </section>
     <section class="solve">
       <div class="container">
-        <h3 class="solve-title">Problems We Solve</h3>
+        <h3 class="title">Problems We Solve</h3>
         <div class="slider">
           <div class="slider_inner">
             <div class="slider-item">
@@ -280,12 +281,10 @@
     </section>
     <section class="plans">
       <div class="plans-wrapper">
-        <h3 class="plans-title">SKOUT Plans</h3>
+        <h3 class="plans-title title">SKOUT Plans</h3>
         <div class="plans-card-inner">
           <div class="plans-card">
-            <div class="plans-card-title-wrapper">
-              <h4 class="card-title">Bronze</h4>
-            </div>
+            <h4 class="card-title">Bronze</h4>
             <ul class="plans-card-list">
               <li class="card-item-wrapper">
                 <span class="check-icon"></span>
@@ -313,9 +312,7 @@
             </div>
           </div>
           <div class="plans-card">
-            <div class="plans-card-title-wrapper">
-              <h4 class="card-title">Silver</h4>
-            </div>
+            <h4 class="card-title">Silver</h4>
             <ul class="plans-card-list">
               <li class="card-item-wrapper">
                 <span class="check-icon"></span>
@@ -343,9 +340,7 @@
             </div>
           </div>
           <div class="plans-card">
-            <div class="plans-card-title-wrapper">
-              <h4 class="card-title">Gold</h4>
-            </div>
+            <h4 class="card-title">Gold</h4>
             <ul class="plans-card-list">
               <li class="card-item-wrapper">
                 <span class="check-icon"></span>
@@ -373,9 +368,7 @@
             </div>
           </div>
           <div class="plans-card plans-card-plus">
-            <div class="plans-card-title-wrapper">
-              <h4 class="card-title">Plus</h4>
-            </div>
+            <h4 class="card-title">Plus</h4>
             <ul class="plans-card-list">
               <li class="card-item-wrapper">
                 <span class="check-icon"></span>
@@ -498,7 +491,7 @@
     <section class="services">
       <div class="services-inner">
         <div class="services-item services-item-text">
-          <h3 class="services-title title">Still have questions? Reach out today.</h3>
+          <h3 class="title">Still have questions? Reach out today.</h3>
           <p class="services-text text">
             Whether you’re a potential management service provider or a business owner looking for a little extra peace
             of mind,
@@ -615,43 +608,19 @@
         <div class="social-inner">
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-footer-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
-                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.22744 23.125C20.3121 23.125 26.3776 14.2255 26.3776 6.52098C26.3776 6.27061 26.3776 6.02024 26.3658 5.76987C27.5413 4.95048 28.5639 3.91486 29.375 2.74268C28.2936 3.20928 27.1299 3.51655 25.9074 3.66449C27.1534 2.94753 28.1055 1.79811 28.5639 0.432456C27.4002 1.1039 26.1072 1.58188 24.7319 1.84363C23.627 0.705586 22.0636 0 20.3356 0C17.0091 0 14.3055 2.6175 14.3055 5.83815C14.3055 6.29337 14.3642 6.73721 14.4583 7.16966C9.45078 6.93067 5.0075 4.59769 2.03356 1.06976C1.51636 1.93467 1.22249 2.93615 1.22249 4.00591C1.22249 6.03162 2.29217 7.81834 3.90256 8.86534C2.91517 8.8312 1.98654 8.56945 1.17547 8.137C1.17547 8.15976 1.17547 8.18252 1.17547 8.21666C1.17547 11.039 3.25605 13.4061 6.00665 13.941C5.5012 14.0776 4.97224 14.1459 4.41977 14.1459C4.03186 14.1459 3.65571 14.1117 3.29132 14.0434C4.05537 16.365 6.28877 18.0493 8.92182 18.0949C6.85299 19.6654 4.2552 20.5985 1.43407 20.5985C0.952131 20.5985 0.470188 20.5758 0 20.5189C2.65656 22.1577 5.83033 23.125 9.22744 23.125Z"
-                    fill="#7F7F7F" />
-                </svg>
-              </a>
+              <a class="social-footer-link social-footer-link-tweeter" href="#"></a>
             </li>
             <li>
-              <a class="social-footer-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.6184 0H1.38158C0.618554 0 0 0.618554 0 1.38158V23.6184C0 24.3814 0.618554 25 1.38158 25H13.3553V15.3509H10.0877V11.5482H13.3377V8.77193C13.3377 5.53947 15.307 3.7807 18.1886 3.7807C19.1675 3.78361 20.1455 3.83925 21.1184 3.94737V7.32018H19.1272C17.5614 7.32018 17.2588 8.0614 17.2588 9.15351V11.5658H21.0088L20.5219 15.3509H17.2588V25H23.6184C24.3814 25 25 24.3814 25 23.6184V1.38158C25 0.618554 24.3814 0 23.6184 0Z"
-                    fill="#7F7F7F" />
-                </svg>
-              </a>
+              <a class="social-footer-link social-footer-link-facebook" href="#"></a>
             </li>
             <li>
-              <a class="social-footer-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="23" viewBox="0 0 32 23" fill="none">
-                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12.6776 16.2484V6.75159L21.0085 11.5002L12.6776 16.2484ZM31.2089 3.76345C30.8423 2.38042 29.7622 1.29135 28.3908 0.921734C25.9051 0.25 15.9375 0.25 15.9375 0.25C15.9375 0.25 5.96986 0.25 3.48415 0.921734C2.11281 1.29135 1.03268 2.38042 0.666115 3.76345C0 6.27002 0 11.5 0 11.5C0 11.5 0 16.7298 0.666115 19.2366C1.03268 20.6196 2.11281 21.7086 3.48415 22.0784C5.96986 22.75 15.9375 22.75 15.9375 22.75C15.9375 22.75 25.9051 22.75 28.3908 22.0784C29.7622 21.7086 30.8423 20.6196 31.2089 19.2366C31.875 16.7298 31.875 11.5 31.875 11.5C31.875 11.5 31.875 6.27002 31.2089 3.76345Z"
-                    fill="#7F7F7F" />
-                </svg>
-              </a>
+              <a class="social-footer-link social-footer-link-youtube" href="#"></a>
             </li>
             <li>
-              <a class="social-footer-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <path class="social-hover" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.3035 21.3028H17.5958V15.5007C17.5958 14.1174 17.5722 12.3375 15.6694 12.3375C13.7396 12.3375 13.4451 13.8451 13.4451 15.4021V21.3028H9.74167V9.37222H13.2958V11.0035H13.3472C13.8417 10.0653 15.0514 9.07639 16.8549 9.07639C20.6097 9.07639 21.3035 11.5465 21.3035 14.7597V21.3028ZM5.56111 7.74236C4.37014 7.74236 3.40972 6.77917 3.40972 5.59167C3.40972 4.40486 4.37014 3.44167 5.56111 3.44167C6.74722 3.44167 7.70972 4.40486 7.70972 5.59167C7.70972 6.77917 6.74722 7.74236 5.56111 7.74236ZM3.70417 21.3028H7.41597V9.37222H3.70417V21.3028ZM23.15 0H1.84375C0.826389 0 0 0.806944 0 1.80278V23.1958C0 24.1917 0.826389 25 1.84375 25H23.15C24.1694 25 24.9993 24.1917 24.9993 23.1958V1.80278C24.9993 0.806944 24.1694 0 23.15 0Z"
-                    fill="#7F7F7F" />
-                </svg>
-              </a>
+              <a class="social-footer-link social-footer-link-linkedin" href="#"></a>
             </li>
           </ul>
-          <a class="social-footer-link" href="#">
+          <a href="#">
             <img class="footer-logo-img" src="images/footer-logo.svg" alt="logo">
           </a>
         </div>

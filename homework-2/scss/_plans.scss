@@ -24,7 +24,6 @@
     padding: 0;
   }
   @include desktop {
-    max-width: 1440px;
     justify-content: space-between;
     padding: 0; 
     margin: 70px auto 0;
@@ -37,7 +36,7 @@
   position: relative;
   width: 100%;
   margin: 30px 13px 0 0;
-  padding: 35px 23px 53px;
+  padding: 35px 25px;
   background: #fff;
   box-shadow: $button-box-shadow;
   border-radius: 5px; 
@@ -46,21 +45,13 @@
   &:hover {
     @include desktop {
       background-image: $img-bg-card;
-      transform: translateX(-20px) scaleY(1.1);
+      transform:  scaleY(1.1);
     }
   }
-  @include tablet {
-    padding: 35px 5px 25px;
-  }
   @include desktop {
-    max-width: 286px;
-    padding: 29px 34px 38px;
-    margin-right: 0;
+    padding: 42px 55px;
+    margin-right: 40px;
     background-color: #fff;
-  }
-  @include widescreen {
-    max-width: 330px;
-    padding: 42px 56px 38px;
   }
   .card-title {
     color: $brandColor;
@@ -93,18 +84,18 @@
     border: 1px solid $brandColor;
     box-shadow: $button-box-shadow;
     border-radius: 20px;
-    padding: 8px 50px;  
+    padding: 8px 18px;  
+    transition: .3s ease-in-out;
+    &:hover {
+      color: #7f7f7f;
+    }
     @include tablet {
       padding: 8px 6px;
-    }
-    @include desktop {
-      padding: 8px 35px;
     }
   }
   &-list {
     margin-top: 30px;
     @include desktop {
-      max-width: 219px;
       width: 100%;
       margin-top: 40px;
       padding-left: 0;
@@ -116,7 +107,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 9px 0 16px;
+  padding: 10px 0;
   &::before {
     content: "";
     position: absolute;
@@ -124,9 +115,6 @@
     width: 100%;
     height: 2px;
     background: #f2f2f2;
-    @include desktop {
-      width: 218px;
-    }
   }
   @include desktop {
     display: flex;
@@ -152,8 +140,7 @@
 .check-icon {
   position: relative;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  padding: 15px;
   background: transparent;
   border: 2px solid $brandColor;
   border-radius: 50%;
@@ -181,11 +168,13 @@
 .minus-icon {
   position: relative;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  padding: 15px;
   background: transparent;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  &:hover {
+    padding: 14px 15px;
+  }
   &::before { 
     content: "";
     width: 18px;
@@ -193,7 +182,7 @@
     height: 2px;
     position: absolute;
     top: 14px;
-    left: 7px;
+    left: 6px;
   }
 }
 .plans-card-plus {
@@ -207,6 +196,7 @@
   }
   .plans-card:hover .check-icon {
     border: 2px solid #fff;
+    padding: 14px 15px;
     &::after,
     &::before {
       background: #fff;

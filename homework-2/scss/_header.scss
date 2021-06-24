@@ -18,7 +18,7 @@
   .logo-link {
     position: relative;
     color: $color-text-header;
-    font-family: $font-hero-title;
+    font-family: 'Actor', sans-serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;  
@@ -140,6 +140,9 @@
   background-color: $bg-color-primary;
   transition: transform .5s ease-out;
   transform: translateY(-130%);
+  @include desktop {
+    display: flex;
+  }
   .header-menu {
     position: relative;
     display: flex;
@@ -148,7 +151,6 @@
     width: 100%;
     padding-top: 40px;  
     @include desktop {
-     
       flex-direction: row;
       justify-content: flex-end;
       width: 100%;       

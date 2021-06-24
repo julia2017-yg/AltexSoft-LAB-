@@ -27,7 +27,7 @@
     margin: 0 auto;
     padding: 75px 0 62px;
     color: #fff;
-    font-family: $font-hero-title;
+    font-family: 'Actor', sans-serif;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 1px;
@@ -92,13 +92,10 @@
       }
     }   
     @include desktop {
-      max-width: 200px;
-      width: 100%;
       margin: 0;  
     }
   }
   &-button {
-    max-width: 208px;
     width: 100%;
     background: $button-bg-light;
     box-shadow: $button-box-shadow;
