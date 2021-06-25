@@ -39,13 +39,13 @@ body.lock {
   padding: 8px 0; 
   border-radius: $button-border-radius;
   border: 1px solid $brandColor;
-  color: $brandColor;   
+  color: $brandColor;
   font-family: $font-links;
   font-size: 10px; 
   line-height: 24px;
   letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   @include desktop {
     width: 100%;
     font-size: 12px;

@@ -31,8 +31,8 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 1px;
-    text-align: center;   
-    text-transform: uppercase;  
+    text-align: center;
+    text-transform: uppercase;
     @include tablet {
       max-width: 510px;
       padding: 120px 0 0;   
@@ -53,8 +53,8 @@
     margin-top: 31px;
     color: #fff;
     font-size: 13px;
-    line-height: 24px;    
-    text-shadow: $hero-text-shadow;   
+    line-height: 24px;
+    text-shadow: $hero-text-shadow;
     &::before {
       content: '';
       position: absolute;
@@ -92,7 +92,7 @@
       }
     }   
     @include desktop {
-      margin: 0;  
+      margin: 0;
     }
   }
   &-button {

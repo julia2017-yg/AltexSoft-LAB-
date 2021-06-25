@@ -99,7 +99,7 @@
       width: 100%;
       margin-top: 40px;
       padding-left: 0;
-      transition: all 0.5s ease-in-out;    
+      transition: all 0.5s ease-in-out;
     }
   }
 }
@@ -118,7 +118,7 @@
   }
   @include desktop {
     display: flex;
-    align-items: center;  
+    align-items: center;
   }
 }
 .card-item {
@@ -188,7 +188,7 @@
   }
 }
 @include desktop {
-  .plans-card:hover .card-item { 
+  .plans-card:hover .card-item {
       color: #fff;
   }
   .plans-card:hover .check-icon,
@@ -202,5 +202,5 @@
   }
   .plans-card:hover .card-title {
     color: $color-title;
-  }  
+  }
 }

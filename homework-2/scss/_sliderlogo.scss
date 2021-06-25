@@ -46,9 +46,9 @@
   @include tablet {
     padding: 0 128px;
   }
-  @include desktop {
-    padding: 0px 40px;
+  @include widescreen {
     margin-left: 160px;
+    padding: 0px 40px;
   }
 }
 .description-text {
