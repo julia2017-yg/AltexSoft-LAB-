@@ -1,0 +1,72 @@
+//FONTS
+$font-links: 'Acme', sans-serif;
+$font-button: 'Acme', sans-serif;;
+$font-title: 'Acme', sans-serif;
+
+//FONTS
+
+//MEDIA BREAKPOINTS
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1200px;
+$widescreen: 1440px;
+//MEDIA BREAKPOINTS
+
+//COLORS
+$brandColor: #22bf95;
+$color-text-primary: #191919;
+$color-title: #fff;
+$color-button-text-primary: #fff;
+$color-text-header: #fff;
+$color-get-more-title: #fff;
+$color-text-footer: #7f7f7f;
+$sticky-logo: #b2b2b2;
+$color-button-desktop: #fff;
+$color-sticky-link: #b2b2b2;
+$color-description-text: #7f7f7f;
+//COLORS
+
+//IMG
+$img-bg-card: linear-gradient(60deg, #21c3d8 20%, #13d2c2 40%, #01f17d 75%);
+//IMG
+//OTHERS
+$button-border-radius: 20px;
+$button-bg-light: #fff;
+$button-box-shadow: 0px 6px 12px rgba(127, 127, 127, 0.3);
+$hero-text-shadow: 0px 2px 4px rgba(127, 127, 127, 0.3);
+$bg-sticky-hamburger-menu: #b2b2b2;
+$bg-sticky-header: #fff;
+$bg-color-primary: #fff;
+//OTHERS
+
+//extends
+%title-section-text-mobile {
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-text-primary;
+}
+%button-light {
+  background: $bg-color-primary;
+  border: 1px solid $brandColor;
+  box-sizing: border-box;
+  box-shadow: $button-box-shadow;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $brandColor;
+}
+%button-dark {
+  width: 100%;
+  background: $brandColor;
+  box-shadow: $button-box-shadow;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $color-button-text-primary;
+}

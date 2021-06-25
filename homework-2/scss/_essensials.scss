@@ -1,0 +1,111 @@
+@import 'vars';
+@import 'mixins';
+
+.essensials {
+  padding-bottom: 88px;
+  @include widescreen {
+    padding-top: 21px;
+  }
+  &-cards {
+    @include tablet {
+      margin-top: 46px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+}
+.card {
+  background: $bg-color-primary;
+  box-shadow: 0px 12px 24px #E5E5E5;
+  border-radius: 5px;
+  margin-top: 10px; 
+  padding: 30px 15px 10px 42px;
+  border-left: 5px solid $brandColor;
+  &-inner {
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+  }
+  &-title {
+    @include widescreen {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  &-info {
+    background-image: url(../images/info-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0;
+    background-size: 19px;
+    height: 19px;
+  }
+  &-icon {
+    width: 58px;
+    margin-left: 15px;
+    @include widescreen {
+      max-width: 90px;
+      width: 100%;
+      margin-left: 25px;
+    }
+  }
+  & .info-icon {
+    width: 19px;
+    height: 19px;
+    @include widescreen {
+      max-width: 22px;
+      width: 100%;
+    }
+  }
+  &-text {
+    max-width: 182px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 22px;
+    @include widescreen {
+      max-width: 277px;
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+  &-second {
+    @include tablet {
+      margin-left: 30px;
+    }   
+  }
+  &-button {
+    @include tablet {
+      max-width: 230px;
+    }   
+  }
+  @include tablet {
+    margin-top: 30px;
+  }
+  @include widescreen {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 35px;
+    padding: 28px 15px 10px 42px;
+  }
+}
+.card-button {
+  display: flex;
+  flex-direction: column;
+  max-width: 209px;
+  width: 100%;
+  margin: 0 auto;
+  & .button-product {
+    margin-top: 80px;
+    color: $color-button-text-primary;
+    background-color: $brandColor;
+    @include widescreen {
+      margin-top: 73px;
+    }
+  }
+}
+.card-secondary {
+  @include widescreen {
+    padding-top: 24px;
+  }
+}

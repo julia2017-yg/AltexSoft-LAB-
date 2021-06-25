@@ -1,0 +1,92 @@
+@import 'vars';
+@import 'mixins';
+
+.about {
+  padding: 60px 0 80px;
+  .container {
+    @include desktop {
+      max-width: 1170px;
+      padding: 0;
+    }
+  }
+  &-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &-img {
+    max-width: 270px;
+    width: 100%;
+    margin: 20px auto 0;
+    @include tablet {
+      max-width: 350px;
+    }
+    @include desktop {
+      max-width: 600px;
+    }
+  }
+  &-text {
+    @extend %title-section-text-mobile;
+    max-width: 309px;
+    width: 100%;
+    margin-top: 20px;
+    @include desktop {
+      font-size: 16px;
+      max-width: 402px;
+    }
+  }
+  &-button {
+    display: flex;
+    flex-direction: column;
+    max-width: 209px;
+    width: 100%;
+    margin: 0 auto;   
+    & .button-more {
+      @extend %button-light;
+      margin-top: 30px;
+      padding: 8px 0;
+      @include desktop {
+        max-width: 200px;
+        width: 100%;
+        margin-right: 70px;
+      }
+    }
+    & .button-product {
+      @extend %button-dark;
+      margin-top: 30px;
+      padding: 8px 0;
+      @include desktop {
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+    @include desktop {
+      position: relative;
+      left: 30%;
+      bottom: 200px;
+      flex-direction: row;
+      max-width: 480px;  
+    }
+  } 
+  &-item-right {
+    @include tablet {
+      order: 2;
+      margin-left: 60px;
+    }  
+    @include desktop {
+      margin-left: 95px;
+    }    
+  }
+  &-item-left {
+    @include tablet {
+      order: 1;
+    }     
+  }    
+  @include desktop {
+    position: relative;
+    padding: 40px 0 80px;
+  }
+}
