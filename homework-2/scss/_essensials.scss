@@ -3,6 +3,9 @@
 
 .essensials {
   padding-bottom: 88px;
+  @include widescreen {
+    padding-top: 21px;
+  }
   &-cards {
     @include tablet {
       margin-top: 46px;
@@ -10,18 +13,6 @@
       flex-flow: row wrap;
       justify-content: center;
     }
-  }
-  &-title {
-    max-width: 300px;
-    @include tablet {
-      max-width: 785px;
-    }
-    @include widescreen {
-      max-width: 785px;
-    }
-  }
-  @include widescreen {
-    padding-top: 21px;
   }
 }
 .card {
