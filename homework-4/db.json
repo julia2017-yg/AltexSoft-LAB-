@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "company": "LOVEPA",
+      "name": "Watson Jarvis",
+      "address": "Gatling Place 696",
+      "city": "Leeper, New York, 1698",
+      "country": "Malaysia",
+      "id": "5bf8de1ae65ae21f5c551d3b"
+    },
+    {
+      "company": "PULZE",
+      "name": "Spears Yates",
+      "address": "Cozine Avenue 824",
+      "city": "Woodlands, Virginia, 3826",
+      "country": "Ethiopia",
+      "id": "5bf8de1a83cb41ccfb80ec79"
+    },
+    {
+      "company": "NETBOOK",
+      "name": "Bobbis Rutledge",
+      "address": "Lafayette Avenue 969",
+      "city": "Cascades, Virgin Islands, 9230",
+      "country": "Tanzania",
+      "id": "5bf8de1adc668eeeba3ec410"
+    },
+    {
+      "id": "5bf8de1a04bba78e9c2e699e",
+      "name": "Rosemarie Little",
+      "company": "FLEXIGEN",
+      "address": "Glendale Court 464",
+      "city": "Taft, Northern Mariana Islands, 9704",
+      "country": "Bolivia",
+      "email": "rosemarielittle@flexigen.com",
+      "phone": "+1 (984) 460-3365"
+    },
+    {
+      "id": "5bf8de1a799e0a6396ea4d70",
+      "name": "Leonard Cabrera",
+      "company": "QOT",
+      "address": "Llama Court 238",
+      "city": "Cotopaxi, Minnesota, 3686",
+      "country": "Saint Lucia",
+      "email": "leonardcabrera@qot.com",
+      "phone": "+1 (979) 440-2083"
+    },
+    {
+      "id": "5bf8de1aa867105eb1acd730",
+      "name": "Mallory Solis",
+      "company": "SLUMBERIA",
+      "address": "Crystal Street 214",
+      "city": "Lupton, Kentucky, 8780",
+      "country": "Lebanon",
+      "email": "mallorysolis@slumberia.com",
+      "phone": "+1 (957) 561-2207"
+    },
+    {
+      "id": "5bf8de1a792bd6efd04c4ff2",
+      "name": "Lenora Simon",
+      "company": "INTERFIND",
+      "address": "Porter Avenue 390",
+      "city": "Veguita, Nevada, 9317",
+      "country": "Trinidad and Tobago",
+      "email": "lenorasimon@interfind.com",
+      "phone": "+1 (977) 532-2677"
+    },
+    {
+      "id": "5bf8de1af98fbcd0478776a8",
+      "name": "Garrison Montgomery",
+      "company": "SLOGANAUT",
+      "address": "Cumberland Walk 795",
+      "city": "Northchase, South Carolina, 4058",
+      "country": "United States",
+      "email": "garrisonmontgomery@sloganaut.com",
+      "phone": "+1 (999) 422-3909"
+    },
+    {
+      "id": "5bf8de1ad6f1639d75266a3c",
+      "name": "Stevens Wise",
+      "company": "GUSHKOOL",
+      "address": "Verona Street 989",
+      "city": "Yorklyn, California, 8084",
+      "country": "Maldives",
+      "email": "stevenswise@gushkool.com",
+      "phone": "+1 (999) 444-2207"
+    },
+    {
+      "id": "5bf8de1af3cb6586d30ef9a4",
+      "name": "Lorna Mason",
+      "company": "TROPOLI",
+      "address": "Delmonico Place 572",
+      "city": "Hemlock, Georgia, 9553",
+      "country": "Italy",
+      "email": "lornamason@tropoli.com",
+      "phone": "+1 (816) 590-3925"
+    },
+    {
+      "company": "fesf",
+      "name": "jony",
+      "address": "1 й Индивидуальный",
+      "city": "Николаев",
+      "country": "Украина",
+      "id": "IGp03Mg"
+    }
+  ]
+}
