@@ -1,11 +1,11 @@
 {
   "posts": [
     {
-      "company": "LOVEPA",
-      "name": "Watson Jarvis",
-      "address": "Gatling Place 696",
-      "city": "Leeper, New York, 1698",
-      "country": "Malaysia",
+      "company": "reno",
+      "name": "kolian",
+      "address": "1 й Индивидуальный пер. 1",
+      "city": "Николаев",
+      "country": "Украина",
       "id": "5bf8de1ae65ae21f5c551d3b"
     },
     {
@@ -45,14 +45,12 @@
       "phone": "+1 (979) 440-2083"
     },
     {
-      "id": "5bf8de1aa867105eb1acd730",
-      "name": "Mallory Solis",
-      "company": "SLUMBERIA",
-      "address": "Crystal Street 214",
-      "city": "Lupton, Kentucky, 8780",
-      "country": "Lebanon",
-      "email": "mallorysolis@slumberia.com",
-      "phone": "+1 (957) 561-2207"
+      "company": "reno",
+      "name": "kolian",
+      "address": "1 й Индивидуальный пер. 1",
+      "city": "Николаев",
+      "country": "Украина",
+      "id": "5bf8de1aa867105eb1acd730"
     },
     {
       "id": "5bf8de1a792bd6efd04c4ff2",
@@ -101,6 +99,14 @@
       "city": "Николаев",
       "country": "Украина",
       "id": "IGp03Mg"
+    },
+    {
+      "company": "reno",
+      "name": "kolia",
+      "address": "1 й Индивидуальный пер. 1",
+      "city": "Николаев",
+      "country": "Украина",
+      "id": "z73EpQ1"
     }
   ]
 }
