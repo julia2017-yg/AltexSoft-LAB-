@@ -1,3 +1,5 @@
+const getMoney = document.getElementById("get-money");
+
 function giveMyMoney(money, coins) {
   let needCoins = [], minCoins = []; minCoins[0] = 0;
 
@@ -36,7 +38,6 @@ function giveMyMoney(money, coins) {
               break;
           }
       }
-
       if (curSum === sum) {
           needCoins = [];
           break; // not enough bills
@@ -71,5 +72,4 @@ alert (res ? `${amount} = ${res}` : "Wrong amount entered or not enough bills in
 
 }
 
-const getMoney = document.getElementById("get-money")
 getMoney.addEventListener("click", enterAmount);
