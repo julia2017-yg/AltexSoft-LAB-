@@ -56,7 +56,6 @@ let coins = [
 
 function enterAmount() {
 const amount = document.getElementById("amount").value;
-console.log(coins);
 const needCoins = giveMyMoney(amount, coins);
 let res = "", controlSum = 0;
 
